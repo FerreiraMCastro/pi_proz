@@ -36,7 +36,7 @@ As tecnologias aplicadas neste projeto são:
 2. **Abra o arquivo index.html em seu nevagador:
    O projeto é executado diretamente no navegador, sem necessidade de configurações adicionais.
 
-   ##Equipe de desenvolvimento##
+##Equipe de desenvolvimento
 
    | Nome            | Contato                              |  
    |------------------|--------------------------------------|  
