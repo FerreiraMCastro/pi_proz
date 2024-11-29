@@ -1,7 +1,7 @@
 # pi_proz
 Repositório criado para colaboração no projeto integrador da Proz Talent Cloud - 2024 
 
-# E-commerce de Roupas - Loja Virtual  
+# E-commerce  - Loja Virtual  
 
 Este é um projeto desenvolvido para o **curso de programação** como parte de nossos estudos em **desenvolvimento de software**.  
 O objetivo é criar uma loja virtual de roupas, com um **design jovem e moderno**, utilizando tecnologias web como **HTML**, **CSS** e **JavaScript**.
