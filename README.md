@@ -49,20 +49,13 @@ As tecnologias aplicadas neste projeto são:
 
 ## Previa do designer
 
-ecommerce-roupas/
-│
-├── designs/            # Design Inicial exportado do figma
-│   ├── [text](https://www.figma.com/design/Lz3YenacgrKkqZIZa4D4AD/Marcia-Castro's-team-library?node-id=2319-4&node-type=canvas&t=1t0JN9DV4oOlI7zG-0)
-│   ├── 
-│   └── 
-│
-├── src/                # Código-fonte do projeto
-│   ├── 
-│   ├── 
-│   ├──
-│   └── 
-│       ├── 
-│       └── 
-│
-├── README.md           # Documentação do projeto
-└── LICENSE             # Licença (opcional)
+# Designer : Jackson Lins, Márcia Ferreira, Valter José, Hadassah Lopes
+
+Clique no botão abaixo para acessar o protótipo no Figma:
+
+[![Abrir no Figma](https://img.shields.io/badge/Design-Figma-orange?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/https://www.figma.com/design/Lz3YenacgrKkqZIZa4D4AD/Marcia-Castro's-team-library?node-id=2319-4&node-type=canvas&t=1t0JN9DV4oOlI7zG-0)
+# Designer Anderson Dulce
+
+Clique no botão abaixo para acessar o protótipo no Figma:
+
+[![Abrir no Figma](https://img.shields.io/badge/Design-Figma-orange?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/https://www.figma.com/slides/6zHxMqzrmXlmjjRcTeZhq4/FALE-CONOSCO?node-id=1-48&node-type=slide&t=cwGNmJfb5ma2kUmz-0)
