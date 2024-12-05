@@ -49,7 +49,7 @@ As tecnologias aplicadas neste projeto são:
 
 ## Previa do designer
 
-# Designer : Jackson Lins, Márcia Ferreira, Valter José, Hadassah Lopes
+# Designer : Jackson Lins, Márcia Ferreira, Valter Junior, Hadassah Lopes
 
 Clique no botão abaixo para acessar o protótipo no Figma:
 
