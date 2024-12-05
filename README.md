@@ -45,3 +45,24 @@ As tecnologias aplicadas neste projeto são:
    | Jackson Lins da Silva | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jlinssilva/) \|[![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](mailto:jlinssilva@gmail.com) |
    | Hadassah Lopes  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hadassah7zz/)\| [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](mailto:hadassahlopezz00@gmail.com) |
    | Anderson Dolce  | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anderson-dolce-94204988/) \| [![E-mail](https://img.shields.io/badge/-Email-000?style=for-the-badge&logo=microsoft-outlook&logoColor=007BFF)](mailto:dolce436@gmail.com)|   
+
+
+## Previa do designer
+
+ecommerce-roupas/
+│
+├── designs/            # Design Inicial exportado do figma
+│   ├── [text](https://www.figma.com/design/Lz3YenacgrKkqZIZa4D4AD/Marcia-Castro's-team-library?node-id=2319-4&node-type=canvas&t=1t0JN9DV4oOlI7zG-0)
+│   ├── 
+│   └── 
+│
+├── src/                # Código-fonte do projeto
+│   ├── 
+│   ├── 
+│   ├──
+│   └── 
+│       ├── 
+│       └── 
+│
+├── README.md           # Documentação do projeto
+└── LICENSE             # Licença (opcional)
