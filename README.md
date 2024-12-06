@@ -51,23 +51,6 @@ As tecnologias aplicadas neste projeto são:
 
 # Designer : Jackson Lins, Márcia Ferreira, Valter Junior, Hadassah Lopes
 
-<!-- Botão para adicionar link do Figma -->
-<div style="text-align: center; margin: 20px 0;">
-  <a href="https://www.figma.com/design/Lz3YenacgrKkqZIZa4D4AD/Marcia-Castro's-team-library?node-id=2319-4&node-type=canvas&t=F92ZCnPHscPQ82VP-0" target="_blank" style="text-decoration: none;">
-    <button style="
-      background-color: #0acf83;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    " 
-    onmouseover="this.style.backgroundColor='#087d62'"
-    onmouseout="this.style.backgroundColor='#0acf83'">
-      Acessar Figma
-    </button>
-  </a>
-</div>
+[![Acessar Figma](https://img.shields.io/badge/Acessar-Figma-0acf83?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/Lz3YenacgrKkqZIZa4D4AD/Marcia-Castro's-team-library?node-id=2319-4&node-type=canvas&t=F92ZCnPHscPQ82VP-0)
+
 
