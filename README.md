@@ -52,7 +52,7 @@ As tecnologias aplicadas neste projeto são:
 # Designer : Jackson Lins, Márcia Ferreira, Valter Junior, Hadassah Lopes e Anderson Dulce
 
 
-## Click nos botões para acessar os esboços do projeto
+## Click nos botões para acessar os esboços do projeto e você será direcionado para o Figma.
 
 [![Acessar Figma](https://img.shields.io/badge/Acessar-Figma-0acf83?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/Lz3YenacgrKkqZIZa4D4AD/Marcia-Castro's-team-library?node-id=2319-4&node-type=canvas&t=F92ZCnPHscPQ82VP-0)
 [![Acessar Figma](https://img.shields.io/badge/Acessar-Figma-0acf83?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/slides/6zHxMqzrmXlmjjRcTeZhq4/FALE-CONOSCO?node-id=1-48&node-type=slide&t=BbXlqvXsCIugsT9J-0)
