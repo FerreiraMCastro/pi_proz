@@ -5,31 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projeto Integrador - Grupo 05</title>
+  <link rel="icon" href="img/favicon.png">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <!--  CABEÇALHO -->
-  <header>
-    <img src="img/icon.png" align="left" width="64">
-    <nav align="right">
-      <a href="index.html">Início</a>
-      <a href="sobre.html">Sobre nós</a>
-      <a href="faleconosco.html">Fale conosco</a>
-      <form>
-        <input type="search" name="q" aria-placeholder="Pesquisar" placeholder="Pesquisar...">
-        <button type="submit"><img src="img\lupa.png" alt="Lupa " width="14"> </button>
-      </form>
-      <a href="#"><img src="img/compras-online.png" width="32" align="right"></a>
-      <a href="formulario.html"><img src="img\do-utilizador.png" width="32" align="right"></a>
-    </nav>
-  </header>
+    <!--  CABEÇALHO -->
+    <header>
+      <img src="img/favicon.png" align="left" width="64" id="logo">
+      <div id="pesquisa">
+        <form>
+          <input type="search" name="q" aria-placeholder="Pesquisar" placeholder="Pesquisar...">
+          <button type="submit"><img src="img\lupa.png" alt="Lupa" width="14"></button>
+          </form>
+        </div>
+      <nav>
+          <a href="#">In&iacute;cio</a>
+          <a href="sobrenos.html">Sobre n&oacute;s</a>
+          <a href="faleconosco.html">Fale conosco</a>
+          <a href="carrinho.html"><img src="img/compras-online.png" width="32" align="right"></a>
+          <a href="formulario.html"><img src="img/do-utilizador.png" width="32" align="right"></a>
+      </nav>
+    </header>
   
   <main>
-    <p><br><br></p>
-    <hr>
-    <div id="produto1">
-      <img src="img/carrinhocompras.png" align="left">
-      <div id="prodDetalhes-1">
+    <div class="produto">
+      <img src="img/carrinhocompras.png" class="prodImagem">
+      <div class="prodDetalhes">
         <h1>Produto 001</h1>
         <h2>R$ 100,00</h2>
         <form>
@@ -40,8 +42,8 @@
     </div>
     <p><br></p>
     <p><br></p>
-    <div id="produto2">
-      <img src="img/carrinhocompras.png" align="left">
+    <div class="produto">
+      <img src="img/carrinhocompras.png" class="prodImagem">
       <div id="prodDetalhes-2">
         <h1>Produto 002</h1>
         <h2>R$ 80,00</h2>

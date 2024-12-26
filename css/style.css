@@ -1,0 +1,63 @@
+/* Arquivo com a estilização CSS universal do projeto */ 
+
+/* Importar font do Google */
+@import url('https://fonts.googleapi.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapi.com/css?family=Quicksand&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+header, main, footer {
+    display: flex;
+}
+
+header {
+    font-family: 'Roboto';
+    background-color: rgb(245, 245, 220);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header #logo {
+    margin: 5px;
+}
+
+header #pesquisa input[type="search"] {
+    border: 2px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+nav a {
+    margin: 15px;
+}
+
+main {
+    background-color: rgb(144, 238, 144);
+}
+
+footer {
+    background-color: rgb(47, 79, 79);
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav img{
+    margin: 10px;
+}
