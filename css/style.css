@@ -4,20 +4,20 @@
 @import url('https://fonts.googleapi.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapi.com/css?family=Quicksand&display=swap');
 
-
 * {
+    box-sizing: border-box;
+    font-family: 'Roboto';
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
 }
 
 header, main, footer {
     display: flex;
+    flex-direction: row;
 }
 
 header {
-    font-family: 'Roboto';
     background-color: rgb(245, 245, 220);
     flex-direction: row;
     justify-content: space-between;
@@ -48,6 +48,7 @@ nav a {
 
 main {
     background-color: rgb(144, 238, 144);
+    min-height: 100vh;
 }
 
 footer {

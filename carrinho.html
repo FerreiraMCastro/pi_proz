@@ -7,6 +7,7 @@
   <title>Projeto Integrador - Grupo 05</title>
   <link rel="icon" href="img/favicon.png">
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/carrinho.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
           </form>
         </div>
       <nav>
-          <a href="#">In&iacute;cio</a>
+          <a href="index.html">In&iacute;cio</a>
           <a href="sobrenos.html">Sobre n&oacute;s</a>
           <a href="faleconosco.html">Fale conosco</a>
           <a href="carrinho.html"><img src="img/compras-online.png" width="32" align="right"></a>
@@ -29,37 +30,34 @@
     </header>
   
   <main>
-    <div class="produto">
-      <img src="img/carrinhocompras.png" class="prodImagem">
-      <div class="prodDetalhes">
-        <h1>Produto 001</h1>
-        <h2>R$ 100,00</h2>
-        <form>
-          <label>Quantidade: </label><input type="text" value="1">
-        </form>
-        <label>Subtotal: R$ 100,00</label>
+    <div id="listaCarrinho">
+      <div class="produto">
+        <img src="img/carrinhocompras.png" class="prodImagem">
+        <div class="prodDetalhes">
+          <h1>Produto 001</h1>
+          <h2>R$ 100,00</h2>
+          <form>
+            <label>Quantidade: </label><input type="number" value="1" size="3">
+          </form>
+          <label>Subtotal: R$ 100,00</label>
+        </div>
+      </div>
+      <div class="produto">
+        <img src="img/carrinhocompras.png" class="prodImagem">
+        <div class="prodDetalhes">
+          <h1>Produto 002</h1>
+          <h2>R$ 80,00</h2>
+          <form>
+            <label>Quantidade: </label><input type="number" value="2" size="3">
+          </form>
+          <label>Subtotal: R$ 160,00</label>
+        </div>
+      </div>
+      <div id="checkout">
+        <p>Total do pedido: <strong>R$ 260,00</strong></p>
+        <input type="submit" value="Comprar">
       </div>
     </div>
-    <p><br></p>
-    <p><br></p>
-    <div class="produto">
-      <img src="img/carrinhocompras.png" class="prodImagem">
-      <div id="prodDetalhes-2">
-        <h1>Produto 002</h1>
-        <h2>R$ 80,00</h2>
-        <form>
-          <label>Quantidade: </label><input type="text" value="2">
-        </form>
-        <label>Subtotal: R$ 160,00</label>
-      </div>
-    </div>
-    <p><br></p>
-    <p><br></p>
-    <div id="checkout">
-      <p>Total do pedido: <strong>R$ 260,00</strong></p>
-      <input type="submit" value="Comprar">
-    </div>
-    <hr>
   </main>
   
   <!-- RODAPE -->
