@@ -12,7 +12,7 @@
     text-decoration: none;
 }
 
-header, main, footer {
+/* header, main, footer {
     display: flex;
     flex-direction: row;
 }
@@ -61,4 +61,4 @@ footer {
 
 footer nav img{
     margin: 10px;
-}
+} */
