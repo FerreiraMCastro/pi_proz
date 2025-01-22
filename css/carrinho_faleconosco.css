@@ -90,20 +90,11 @@ main{
 
 /* CSS FALE CONOSCO */
 
-main.faleconosco {
-    
-}
-
 div.imgemcapa {
     background-image: url(../img/faleconosco.png);
     background-position: right;
     background-size: cover;
     width: 50vw;
-    /*
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    */
 }
 
 form.fieldset {
