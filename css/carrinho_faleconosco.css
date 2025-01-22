@@ -1,0 +1,116 @@
+/* ESTILO GLOBAL DE CABECALHO E RODAPE */
+
+header, main, footer {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    background-color: rgb(191,188,188);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header #logo {
+    margin: 5px;
+}
+
+header #pesquisa input[type="search"] {
+    border: 2px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+nav a {
+    margin: 15px;
+}
+
+main {
+    background-color: #e2e8f0;
+    /*background-color: rgb(144, 238, 144);*/
+    min-height: 100vh;
+}
+
+footer {
+    background-color: rgb(191,188,188);
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav img{
+    margin: 10px;
+}
+
+/* CSS CARRINHO DE COMPRAS */
+
+main{
+    justify-content: center;
+}
+
+#listaCarrinho {
+    display: flex;
+    flex-basis: 600px;
+    flex-direction: column;
+    margin-block: 30px;
+}
+
+#listaCarrinho .produto {
+    display: flex;
+    flex-direction: row;
+    margin-block: 30px;
+}
+
+#listaCarrinho .produto .prodImagem {
+    margin-inline: 30px;
+    max-width: 120px;
+}
+
+#listaCarrinho .produto .prodDetalhes form {
+    margin-block: 8px;
+}
+
+#listaCarrinho #checkout {
+    display: flex;
+    justify-content: end;
+    font-size: 1.3em;
+    gap: 30px;
+}
+
+
+/* CSS FALE CONOSCO */
+
+main.faleconosco {
+    
+}
+
+div.imgemcapa {
+    background-image: url(../img/faleconosco.png);
+    background-position: right;
+    background-size: cover;
+    width: 50vw;
+    /*
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    */
+}
+
+form.fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px;
+}
+
+
