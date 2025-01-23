@@ -6,58 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projeto Integrador - Grupo 05</title>
   <link rel="icon" href="img/favicon.png">
-  <link href="./css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/form.css">
+  <!-- <link href="./css/style.css" rel="stylesheet"> -->
 </head>
 
 <body>
     <!--  CABEÇALHO -->
-    <header>
-      <img src="img/favicon.png" align="left" width="64" id="logo">
-      <div id="pesquisa">
-        <form>
-          <input type="search" name="q" aria-placeholder="Pesquisar" placeholder="Pesquisar...">
-          <button type="submit"><img src="img\lupa.png" alt="Lupa" width="14"></button>
-          </form>
-        </div>
+    <header class="container">
       <nav>
-          <a href="index.html">In&iacute;cio</a>
-          <a href="sobrenos.html">Sobre n&oacute;s</a>
-          <a href="faleconosco.html">Fale conosco</a>
-          <a href="carrinho.html"><img src="img/compras-online.png" width="32" align="right"></a>
-          <a href="formulario.html"><img src="img/do-utilizador.png" width="32" align="right"></a>
+        <div class="menu">
+          <img src="img/favicon.png" width="64" id="logo" />
+          <ul>
+            <li><a href="index.html">In&iacute;cio</a></li>
+            <li><a href="sobrenos.html">Sobre Nós</a></li>
+            <li><a href="faleconosco.html">Fale conosco</a></li>
+            <li>
+              <a href="carrinho.html"
+                ><img src="img/compras-online.png" width="32"
+              /></a>
+            </li>
+            <li>
+              <a href="formulario.html"
+                ><img src="img/do-utilizador.png" width="32"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
       <main>
-        <p><br><br></p>
-    
-        <hr>
-        <h3 class="cabecalho">Faça seu  Cadastro</h3>
-    
-       <form action="">
-       <div class="container">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" nome="nome_usuário" placeholder="">
-        <br><br>
-    
-        <label for="email">E-mail</label>
-        <input type="email" name="email_usuário" id="email" placeholder="  exemplo@gmail.com" required>
-        <br><br>
-    
-        <label for="contato">Contato</label>
-        <input type="tel" name="telefone_usuário" id="contato" placeholder=" cel: () xxxxx-xxxx"  minlength="11" required>
-        <br><br>
-    
-        <label for="password">Senha</label>
-        <input type="password" name="senha_usuário" id="password" placeholder="" minlength="6" maxlength="16" required>
-        <br><br>
+        <div class="main-login">
+          <section class="banner">
+              <div class="left-login">
+  
+                  <img src="img/img_mulheres_moda.png" alt="várias mulheres">
+                  <div class="filter"></div>
+  
+                  <h1><span>Cadastre-se</span> agora e ganhe <strong> 20%</strong> na primeira compra.</h1>
+  
+              </div>
+          </section>
+          <div class="right-login">
+              <form action="">
+                  <div class="card-login">
+  
+                      <h1>Cadastrar</h1>
+                      <div class="text-field">
+                          <label for="usuario">Usuário</label>
+                          <input type="text" name="nome" id="nome" placeholder="nome">
+                      </div>
+  
+                      <div class="text-field">
+                          <label for="email">E-mail</label>
+                          <input type="email" name="email" id="email" placeholder="@e-mal" required>
+                      </div>
+  
+                      <div class="text-field">
+                          <label for="senha">Celular</label>
+                          <input type="tel" name="tel" id="tel" placeholder="( ) 9999-9999" required>
+                      </div>
+                      <div class="text-field">
+  
+                          <label for="senha">Senha</label>
+                          <input type="password" name="senha" id="senha" placeholder="criar senha" required>
+                      </div>
+  
+                      <button class="btn-login" type="button">Entrar</button>
+              </form>
+          </div>
       </div>
-        <button type="submit" class="botao">Cadastrar</button>
-      </form>
-      
-        
-    
-        <hr>
-        <p><br></p>
+  
+      </div>
+  
       </main>
       <footer>
         <span>&copy 2024 - Projeto Integrador</span>
