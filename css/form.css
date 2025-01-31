@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-/* @keyframes animacao{
-    0%{  background-color: transparent;width: 0%; transform: scale(0.2); color: #ffdb97; }
-    25%{transform: scale(0.5);}
-    50%{background-color:transparent; color: #a6fffc;width: 50%; transform: scale(0.7); }
-    100%{background-color:transparent;width: 100%;transform: scale(0.9);transform: rotate(180deg);}
-} */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,21 +9,10 @@
     font-family: "Poppins", serif;
     
 }
-/* Bom dia, segue as paletas de cores e fontes usada nessa tela como no projeto:
-Usada no Main login = #e2e8f0,
-
-Usada no fundo do banner = rgb(191, 188, 188),
-
-Usada em algumas fontes =  #44403c 
-
-Usada na label e fontes = rgb(203, 124, 68);
- A fonte usada foi a = Poppins Serif.
-
- xxxx Foi usado no efeito do banner xxx
-background: linear-gradient(90deg, rgba(218,251,250,0.9220938375350141) 17%, rgba(168,117,241,0.7148109243697479) 49%, rgba(252,228,183,0.8800770308123249) 100%);*/
 
   body{
-   background-color:#e2e8f0 ; 
+   background-color:#e2e8f0 ;
+   height: 1500px; 
   }
 
 .container{
@@ -36,6 +20,8 @@ background: linear-gradient(90deg, rgba(218,251,250,0.9220938375350141) 17%, rgb
     width: 100vw;
     justify-content: space-between;
     background-color: rgb(191,188,188);
+    position: fixed;
+    z-index: 10;
     /* border: 1px solid black; */
     /* background-color:#cbd5e1; */
     
@@ -43,20 +29,23 @@ background: linear-gradient(90deg, rgba(218,251,250,0.9220938375350141) 17%, rgb
 
 .menu{
     width: 100vw;
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 15rem;
+    padding: 0rem 5rem;
     
 }
 
-.menu > img{
+#logo{
     width: 5rem;
-    height: 6rem;
-    padding: 20px 20px;
-    opacity: 0.5;
+    /* background-color:#cbd5e1; */
+    border-radius: 50%;
+    font-size: larger;
+    font-weight: 800;
+    margin: 10px 0px;
+
 }
+
 
 .menu > ul{
     display: flex;
@@ -69,7 +58,7 @@ background: linear-gradient(90deg, rgba(218,251,250,0.9220938375350141) 17%, rgb
 }
 
 li{
-    font-size: 25px;
+    font-size: 1rem;
   
     
 }
@@ -77,9 +66,22 @@ li{
 a{
     text-decoration: none;
     padding: 5px;
-    color: #020617
-    
+    color: #44403c  
 }
+a:hover{
+    color: rgb(203, 124, 68);
+    transition:1s;
+}
+
+#carrinho{
+    width: 20px;
+
+} 
+
+#usuario{
+    width: 20px;
+}
+
 
 .main-login {
     width: 100vw;
@@ -98,14 +100,12 @@ a{
     text-align: center;
 }
 .filter{
-    width: 80%;
-    height: 60%;
+    width: 60%;
+    height: 50%;
     background-color: #44403c;
     border-radius: 50%;
-    /* background: rgb(218,251,250);
-    background: linear-gradient(90deg, rgba(218,251,250,0.9220938375350141) 17%, rgba(168,117,241,0.7148109243697479) 49%, rgba(252,228,183,0.8800770308123249) 100%); */
     position: absolute;
-    filter: blur(150px);
+    filter: blur(100px);
     margin-top: 20px;
     
    
@@ -114,16 +114,21 @@ a{
 }
 
 .left-login {
-    top:20px;
-    width: 50vw;
-    height: 100%;
+   margin-top:10rem; 
+    width: 40vw;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   background-color: rgb(191, 188, 188);
+   background-color: rgba(191, 188, 188, 0.862);
+   opacity: 0.9;
    position: relative;
    z-index: 2;
+   /* border-radius: 0px 30px; */
+   margin-left: 70px;
+   box-shadow: 0px 10px 20px #44403cb8;
+
   
   
    
@@ -135,11 +140,11 @@ a{
 .left-login img{
     display: flex;
     position: absolute;
-    width: 60%;
-    height: 59%;
+    width: 75%;
+    height: 90%;
     padding-top:25px;
-     z-index: -1;
-     border-radius: 50%;
+    z-index: -1;
+    border-radius: 50%;
      
 
     
@@ -154,54 +159,47 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    color:#44403c;
-    letter-spacing: 0.2rem;
-    margin-top: 10px;
+    color:#cbd5e1;
+    letter-spacing: 0.1rem;
+    /* margin-top: 10px; */
     flex-wrap: wrap;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     padding: 20px;
-    height: 60%;
-    width: 80%;
-    font-style: italic;
-    /* background: #44403c ; */
-    opacity: 80%;
+    /* height: 60%; */
+    /* width: 80%; */
+    /* font-style: italic; */
+    /* opacity: 80%; */
     border-radius: 15px;
-   /* animation: animacao;
-   */
-    /* animation-iteration-count: 2; */
+    z-index: 5;
+   
    
    
     
 }
 .left-login strong{
     font-size: 6rem;
-    color:#fff ;
+    color: rgb(203, 124, 68); 
     font-style: italic;
     z-index: 4; 
-    animation-name: animacao;
-    animation-duration: 3s;
+   
    
 }
 
 .left-login span {
-    /* color: rgb(203, 124, 68); */
-    color: #fff;
+    color:#cbd5e1;
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     padding-top:40px;
    
-    /* animation-name: animacao;
-    animation-duration: 3s; */
-   
-
 }
 
 
 .right-login {
     width: 100vw;
     height: 100vh;
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,10 +217,6 @@ a{
     height: 450px;
     margin-top: 2rem;
     padding-bottom: 1rem;
-   
-   
-   
-
    background-color: rgb(191, 188, 188);
     border-radius: 15px;
     box-shadow: 0px 10px 20px #00000051;
@@ -278,7 +272,6 @@ a{
 
 .text-field>input::placeholder {
 
-    /* color: #44403c; */
     color: chocolate;
     font-size: 0.7rem;
 }
@@ -310,12 +303,55 @@ a{
     letter-spacing: 0.4em;
     
 }
+.roda_pe{
+ width: 100%;
+
+padding: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:rgba(237, 158, 102, 0.762) ;
+box-shadow: 15px 15px 40px #fff;
+
+}
+.copy{
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+     margin-bottom: 1.5em; 
+}
+
+.redes_sociais{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-content: center;
+}.redes_sociais img{
+    justify-items: center;
+    margin-left: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Início do responsivo. */
 @media screen and (max-width:750px) {
     
  body{
     background: #e2e8f0;
-    ;
+    
  }
+ 
     
      .main-login{
         background-color: transparent;
@@ -373,6 +409,7 @@ a{
         align-items: center;
         color: rgb(203, 124, 68);
     }
+
     .left-login span {
         display: flex;
         text-align: center;
@@ -386,9 +423,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10rem;
-        
-        
+        margin-bottom: 10rem;   
     }
     
 }
