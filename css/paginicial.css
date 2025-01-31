@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 
 
 *{
@@ -6,140 +7,150 @@
     box-sizing: border-box;
     padding: 0;
     font-family: "Poppins", serif;
-    
-    /* background: rgb(245, 208, 254);
-    background: linear-gradient(90deg, rgba(245, 208, 254, 1) 0%, rgba(165, 180, 252, 1) 79%);
-    box-shadow: 0px 2px 20px #000; */
+    list-style: none;      
 }
 
 body{
-    background-color: #e2e8f0;
+    background-color: #e2e8f0; 
+    position: absolute;  
 }
 
 .container{
     display: flex;
     width: 100vw;
-    justify-content: space-between;
+    position: fixed; 
+    justify-content: space-around;
     background-color: rgb(191,188,188);
-    /* border: 1px solid black; */
-    /* background-color:#cbd5e1; */
-    
+    padding: 20px;
+    box-shadow: 0px 10px 20px #00000051;    
 }
 
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(191,188,188);
+}
 .menu{
-    width: 100vw;
-    /* border: 1px solid yellow; */
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0rem 15rem;
-    
+    align-items: center;    
 }
 
-.menu > img{
-    width: 5rem;
-    height: 6rem;
-    padding: 20px 20px;
-    opacity: 0.5;
+.menu > div{
+    display: flex;
+    gap: 20px;
 }
 
 .menu > ul{
     display: flex;
-    gap: 8rem;
-    list-style: none;
-    
-    
+    gap: 8rem;       
+}
 
-    
+.item-menu > li:hover{
+    transform: scale(1.2);
+}
+
+.item-menu > li a:hover{
+    color: #8f7d09dc;
+}
+
+.item-menu > li > a{
+    color: #8f4309dc;
 }
 
 li{
-    font-size: 25px;
-  
-    
+    font-size: 25px;    
 }
 
 a{
     text-decoration: none;
     padding: 5px;
-    color: #020617
-    
+}
+
+.carro-perfil{
+    width: 30px;
+    height: 30px;
 }
 
 .container-main{
     width: 100vw;
     height: 100vh;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
-    gap: 10vw;
-    /* border: 3px solid pink; */
-    
-    
+    gap: 10vw;    
 }
 
 .box-img-fem{
-    /* border: 2px solid green; */
     display: flex;
     justify-content: end;
     align-items: center;
     width: 100%;
-    height: 100%;
-    background-color: #e2e8f0;
-    
+    height: 100%;    
 }
 
 .box-img-masc{
-    /* border: 2px solid green; */
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #e2e8f0;
-}
-
-.img-homem{
-    width: 500px;
-    height: 700px;
 }
 
 .img-mulher{
     width: 500px;
     height: 700px;
+    border-radius: 8px;
+    margin-top: 15px;
 }
 
-
-
-
-.rodape > ul{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 5rem;
-    list-style: none;
- 
+.img-homem{
+    width: 500px;
+    height: 700px;
+    border-radius: 8px;
+    margin-top: 15px;   
 }
 
-.rodape ul > li > a{
+#texto-link > ul > li a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #8f4309dc;
+}
+
+#texto-link > li a{
+    color: #8f4309dc;    
+}
+
+.card-marca > ul {
+    border: 2px solid #8f4309dc;
+    border-radius: 6px;
+}
+
+footer{
     display: flex;
-    align-items: flex-end;
+    width: 100vw;
+    justify-content: flex-end;
+    box-shadow: -5px 15px 30px #87550a51;    
+} 
     
+.rodape ul {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;   
 }
-
 
 span{
     font-size: 10px;
 }
 
 
-
-/* ul{
-    display: flex;
-    
- 
-    align-items: center;
-    gap: 8px;
-    list-style: none;
+/*Caso haja necessidade de redefinir */
+/* .menu > img{
+    width: 5rem;
+    height: 6rem;
+    opacity: 0.5;
+    border-radius: 50%;
 } */
 
 
@@ -161,18 +172,9 @@ span{
 
 
 
-/* .menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-    
-.menu ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 15em;
-    
-} */
+
+
+
+
+
 
