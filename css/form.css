@@ -12,7 +12,8 @@
 
   body{
    background-color:#e2e8f0 ;
-   height: 1500px; 
+   height: 1500px;
+   
   }
 
 .container{
@@ -38,7 +39,6 @@
 
 #logo{
     width: 5rem;
-    /* background-color:#cbd5e1; */
     border-radius: 50%;
     font-size: larger;
     font-weight: 800;
@@ -66,21 +66,35 @@ li{
 a{
     text-decoration: none;
     padding: 5px;
-    color: #44403c  
+    color:  #8f4309dc;
+    transition:0.3s linear;
+    
+   
 }
 a:hover{
-    color: rgb(203, 124, 68);
-    transition:1s;
+    color: #44403c;
+font-size: 1.1rem;
+   
+   
+   
 }
 
 #carrinho{
+    
     width: 20px;
 
 } 
 
 #usuario{
-    width: 20px;
-}
+    width: 20px;  
+} 
+#text{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 10px;
+    font-weight: 300;
+}    
 
 
 .main-login {
@@ -100,12 +114,12 @@ a:hover{
     text-align: center;
 }
 .filter{
-    width: 60%;
-    height: 50%;
+    width: 80%;
+    height: 70%;
     background-color: #44403c;
     border-radius: 50%;
     position: absolute;
-    filter: blur(100px);
+    filter: blur(60px);
     margin-top: 20px;
     
    
@@ -161,15 +175,10 @@ a:hover{
     text-align: center;
     color:#cbd5e1;
     letter-spacing: 0.1rem;
-    /* margin-top: 10px; */
     flex-wrap: wrap;
     font-size: 16px;
     font-weight: 300;
     padding: 20px;
-    /* height: 60%; */
-    /* width: 80%; */
-    /* font-style: italic; */
-    /* opacity: 80%; */
     border-radius: 15px;
     z-index: 5;
    
@@ -178,8 +187,8 @@ a:hover{
     
 }
 .left-login strong{
-    font-size: 6rem;
-    color: rgb(203, 124, 68); 
+    font-size: 7rem;
+    color: #D3AD7F;
     font-style: italic;
     z-index: 4; 
    
@@ -310,25 +319,30 @@ padding: 1rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color:rgba(237, 158, 102, 0.762) ;
-box-shadow: 15px 15px 40px #fff;
+/* background-color:rgba(237, 158, 102, 0.762) ;
+box-shadow: 15px 15px 40px #fff; */
 
 }
 .copy{
     font-size: 0.5rem;
     letter-spacing: 0.2rem;
-     margin-bottom: 1.5em; 
+     margin-bottom: 2.5em;
+     text-align: center; 
 }
 
 .redes_sociais{
-  width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   align-content: center;
+  gap: 2rem;
+ 
+
 }.redes_sociais img{
     justify-items: center;
-    margin-left: 10px auto;
+    
+    
+    
 }
 
 
