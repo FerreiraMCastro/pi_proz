@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", serif;
+  list-style: none;
+}
+
+body {
+  background-color: #e2e8f0;
+  position: absolute;
+  width: 100vw;
+}
+
 /* ESTILO GLOBAL DE CABECALHO E RODAPE */
 
 header, main, footer {
@@ -10,6 +26,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 4.5rem;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0px 10px 20px #00000051;
 }
 
 header nav {
@@ -18,7 +38,26 @@ header nav {
     align-items: center;
 }
 
+header nav ul {
+    display: flex;
+    /*gap: 8rem;*/
+}
+
+.item-menu > li:hover {
+    transform: scale(1.2);
+}
+  
+.item-menu > li a:hover {
+    color: #8f7d09dc;
+}
+  
+.item-menu > li > a {
+    color: #8f4309dc;
+}
+
 header #logo {
+    width: 5rem;
+    border-radius: 50px;
     margin: 5px;
 }
 
@@ -35,7 +74,6 @@ nav a {
 }
 
 main {
-    background-color: #e2e8f0;
     /*background-color: rgb(144, 238, 144);*/
     min-height: 100vh;
 }
@@ -56,6 +94,12 @@ footer nav img{
 
 main{
     justify-content: center;
+}
+
+#carrinho {
+    align-items: center;
+    padding: 10vw;
+    width: 100vw;
 }
 
 #listaCarrinho {
@@ -90,18 +134,68 @@ main{
 
 /* CSS FALE CONOSCO */
 
+.faleconosco {
+    align-items: center;
+    padding: 10vw;
+    width: 100vw;
+}
+
 div.imgemcapa {
     background-image: url(../img/faleconosco.png);
     background-position: right;
     background-size: cover;
-    width: 50vw;
+    height: 642px;
+    padding: 10px;
+    width: 32vw;
 }
 
-form.fieldset {
+.faleconosco .formulario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin: 30px;
+    background-color: rgb(191, 188, 188);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000051;
+    padding: 1rem;
 }
 
+.faleconosco .formulario form {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.faleconosco .formulario input, textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    opacity: 50%;
+    outline: none;
+    color: #44403c;
+    font-size: 15px;
+    box-shadow: 0px 2px 15px -5px #fff;
+}
+
+.faleconosco textarea {
+    height: 6em;
+    width: 100%;
+}
+
+.faleconosco .btn-enviar{
+    width: 45%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: chocolate;
+  box-shadow: 0px 10px 40px -10px #fff;
+}
+}
 
