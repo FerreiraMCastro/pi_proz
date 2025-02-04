@@ -36,11 +36,17 @@ header nav {
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
 header nav ul {
     display: flex;
-    /*gap: 8rem;*/
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-menu img {
+    width: 20px;
 }
 
 .item-menu > li:hover {
@@ -79,16 +85,30 @@ main {
 }
 
 footer {
-    background-color: rgb(191,188,188);
-    color: #fff;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    background-color: rgb(191,188,188);
+    color: #000;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    padding: 10px;
 }
 
-footer nav img{
-    margin: 10px;
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
+footer .copy {
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5em;
+  }
+
+/*footer nav img{
+    margin: 10px;
+}*/
 
 /* CSS CARRINHO DE COMPRAS */
 
@@ -110,9 +130,13 @@ main{
 }
 
 #listaCarrinho .produto {
+    background-color: rgb(191, 188, 188);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000051;
     display: flex;
     flex-direction: row;
     margin-block: 30px;
+    padding: 10px;
 }
 
 #listaCarrinho .produto .prodImagem {
@@ -129,6 +153,23 @@ main{
     justify-content: end;
     font-size: 1.3em;
     gap: 30px;
+}
+
+#checkout .btn-enviar{
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    color: chocolate;
+    box-shadow: 0px 10px 40px -10px #fff;
 }
 
 
