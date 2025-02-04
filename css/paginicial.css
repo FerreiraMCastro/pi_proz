@@ -134,15 +134,16 @@ a {
 footer {
   display: flex;
   width: 100vw;
-  justify-content: flex-end;
+  justify-content: center;
   box-shadow: -5px 15px 30px #87550a51;
   margin-top: 50px;
+  background-color: rgb(191, 188, 188);
 }
 
 .rodape ul {
   padding: 8px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 span {
