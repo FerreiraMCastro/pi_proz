@@ -40,66 +40,38 @@
     font-size: larger;
     font-weight: 800;
     margin: 10px 0px;
-
 }
-
 
 .menu > ul{
     display: flex;
     gap: 8rem;
-    list-style: none;
-    
-    
-
-    
+    list-style: none;    
 }
 
 li{
-    font-size: 1rem;
-  
-    
+    font-size: 1rem;   
 }
 
 a{
     text-decoration: none;
     padding: 5px;
-    color:  #8f4309dc;
-   
-    
-   
+    color:  #8f4309dc;   
 }
+
 a:hover{
     color: coral;
    letter-spacing: 0.1em ;
-   transition:1s;
-   
-   
-   
+   transition:1s;  
 }
 
 #carrinho{
     
     width: 20px;
-
 } 
 
 #usuario{
     width: 20px;  
 } 
-/* #text{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 10px;
-    font-weight: 300;
-}  */
-/* #text:hover{
-    font-size: 10px;
-    font-weight: 600;
-    transition: 1s;
-    /* padding: 0.5rem; */
-    
-
 
 .main-login {
     width: 100vw;
@@ -110,6 +82,7 @@ a:hover{
     background-color: #e2e8f0;
     
 }
+
 .banner{
     width: 100%;
     height: 100%;
@@ -117,6 +90,7 @@ a:hover{
     justify-content: center;
     text-align: center;
 }
+
 .filter{
     width: 80%;
     height: 70%;
@@ -124,11 +98,7 @@ a:hover{
     border-radius: 50%;
     position: absolute;
     filter: blur(60px);
-    margin-top: 20px;
-    
-   
-    
-   
+    margin-top: 20px;  
 }
 
 .left-login {
@@ -143,18 +113,10 @@ a:hover{
    opacity: 0.9;
    position: relative;
    z-index: 2;
-   /* border-radius: 0px 30px; */
    margin-left: 70px;
-   box-shadow: 0px 10px 20px #44403cb8;
-
-  
-  
-   
-
-   
-   
-   
+   box-shadow: 0px 10px 20px #44403cb8;  
 }
+
 .left-login img{
     display: flex;
     position: absolute;
@@ -162,12 +124,7 @@ a:hover{
     height: 90%;
     padding-top:25px;
     z-index: -1;
-    border-radius: 50%;
-
-     
-
-    
-    
+    border-radius: 50%;   
 }
 
 
@@ -194,9 +151,7 @@ a:hover{
     color: coral;
     font-style: italic;
     z-index: 4; 
-    font-weight: 500;
-   
-   
+    font-weight: 500;  
 }
 
 .left-login span {
@@ -204,14 +159,13 @@ a:hover{
     font-size: 1.9rem;
     font-weight: 400;
     font-style: normal;
-    /* padding-top:40px;
-    */
+  
 }
+
 .left-login span:hover{
     color: coral;
     transition: 2s;
 }
-
 
 .right-login {
     width: 100vw;
@@ -222,7 +176,6 @@ a:hover{
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 .card-login {
@@ -234,10 +187,9 @@ a:hover{
     height: 450px;
     margin-top: 2rem;
     padding-bottom: 1rem;
-   background-color: rgb(191, 188, 188);
+    background-color: rgb(191, 188, 188);
     border-radius: 15px;
     box-shadow: 0px 10px 20px #00000051;
-
 }
 
 .card-login>h1 {
@@ -257,26 +209,19 @@ a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-
 }
 
 .text-field>label {
-
-
-    align-content: flex-end;
+   align-content: flex-end;
     font-size: 12px;
-    font-weight: 300;
-    /* color: #000; */
+    font-weight: 300;    
 }
 
 .text-field input {
     display: flex;
     width: 100%;
-    
     padding: 0.8rem;
-   
-   border: none;
+    border: none;
     border-radius: 12px;
     background-color: #fff;
     opacity: 50%;
@@ -284,13 +229,11 @@ a:hover{
     color: #44403c;
     font-size: 15px;
     box-shadow:0px 2px 15px -5px #fff;
-
 }
 
 .text-field>input::placeholder {
-
-    color: chocolate;
-    font-size: 0.7rem;
+ color: chocolate;
+ font-size: 0.7rem;
 }
 
 .btn-login {
@@ -299,7 +242,6 @@ a:hover{
     text-align: center;
     justify-content: center;
     align-items: center;
-
     margin: 1rem;
     padding: 10px;
     outline: none;
@@ -318,20 +260,16 @@ a:hover{
     color: #44403c;
     font-weight: 500;
     transition: 2s;
-    letter-spacing: 0.3em;
-    
+    letter-spacing: 0.3em;   
 }
 .roda_pe{
- width: 100%;
-
 padding: 1rem;
 display: flex;
 flex-direction: column;
 align-items: center;
 background-color:rgb(191,188,188);
 width: 100vw;
-padding: 1rem;
-   
+padding: 1rem;  
 }
 
 .copy{
@@ -339,8 +277,6 @@ padding: 1rem;
     letter-spacing: 0.2rem;
      margin-bottom: 2.5em;
      text-align: center; 
-   
- 
 }
 
 .redes_sociais{
@@ -349,17 +285,10 @@ padding: 1rem;
   text-align: center;
   align-content: center;
   gap: 2rem;
+}
 
-  
-    
- 
-
-}.redes_sociais img{
-    justify-items: center;
-    
-    
-    
-    
+.redes_sociais img{
+    justify-items: center;   
 }
 
 
