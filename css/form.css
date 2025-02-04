@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
-    
+    font-family: "Poppins", serif; 
 }
 
   body{
@@ -60,12 +58,11 @@ a{
 
 a:hover{
     color: coral;
-   letter-spacing: 0.1em ;
-   transition:1s;  
+    letter-spacing: 0.1em ;
+    transition:1s;  
 }
 
 #carrinho{
-    
     width: 20px;
 } 
 
@@ -79,8 +76,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e2e8f0;
-    
+    background-color: #e2e8f0;   
 }
 
 .banner{
@@ -102,19 +98,19 @@ a:hover{
 }
 
 .left-login {
-   margin-top:10rem; 
+    margin-top:10rem; 
     width: 40vw;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   background-color: rgba(191, 188, 188, 0.862);
-   opacity: 0.9;
-   position: relative;
-   z-index: 2;
-   margin-left: 70px;
-   box-shadow: 0px 10px 20px #44403cb8;  
+    background-color: rgba(191, 188, 188, 0.862);
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+    margin-left: 70px;
+    box-shadow: 0px 10px 20px #44403cb8;  
 }
 
 .left-login img{
@@ -127,9 +123,7 @@ a:hover{
     border-radius: 50%;   
 }
 
-
 .left-login h1{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +206,7 @@ a:hover{
 }
 
 .text-field>label {
-   align-content: flex-end;
+    align-content: flex-end;
     font-size: 12px;
     font-weight: 300;    
 }
@@ -232,8 +226,8 @@ a:hover{
 }
 
 .text-field>input::placeholder {
- color: chocolate;
- font-size: 0.7rem;
+    color: chocolate;
+    font-size: 0.7rem;
 }
 
 .btn-login {
@@ -263,28 +257,28 @@ a:hover{
     letter-spacing: 0.3em;   
 }
 .roda_pe{
-padding: 1rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color:rgb(191,188,188);
-width: 100vw;
-padding: 1rem;  
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(191,188,188);
+    width: 100vw;
+    padding: 1rem;  
 }
 
 .copy{
     font-size: 0.6rem;
     letter-spacing: 0.2rem;
-     margin-bottom: 2.5em;
-     text-align: center; 
+    margin-bottom: 2.5em;
+    text-align: center; 
 }
 
 .redes_sociais{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
-  gap: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    gap: 2rem;
 }
 
 .redes_sociais img{
