@@ -88,6 +88,7 @@ a {
   width: 100%;
   height: 100%;
   margin-top: 50px;
+  
 }
 
 .box-img-masc {
@@ -97,6 +98,7 @@ a {
   width: 100%;
   height: 100%;
   margin-top: 50px;
+  
 }
 
 .img-mulher {
@@ -125,11 +127,10 @@ a {
 #texto-link > li {
   font-size: 20px;
 }
-.card-marca > ul {
-  border: 2px solid #8f4309dc;
-  border-radius: 6px;
-}
 
+
+
+/* 
 footer {
   width: 100vw;
   height: 15vh;
