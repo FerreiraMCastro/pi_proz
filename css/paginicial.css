@@ -10,6 +10,7 @@
 }
 
 body {
+  height: 2000px;
   background-color: #e2e8f0;
   position: absolute;
 }
@@ -48,12 +49,10 @@ body {
   gap: 8rem;
 }
 
-.item-menu > li:hover {
-  transform: scale(1.2);
-}
-
 .item-menu > li a:hover {
-  color: #8f7d09dc;
+  color: coral;
+   letter-spacing: 0.1em ;
+   transition:1s;
 }
 
 .item-menu > li > a {
@@ -74,10 +73,10 @@ a {
 }
 
 .container-main {
+  display: flex;
   width: 100vw;
   height: 100vh;
   margin-top: 50px;
-  display: flex;
   justify-content: space-between;
   gap: 10vw;
 }
@@ -132,22 +131,29 @@ a {
 }
 
 footer {
-  display: flex;
   width: 100vw;
+  height: 15vh;
+  display: flex;
   justify-content: center;
+  margin-top: 60px;
   box-shadow: -5px 15px 30px #87550a51;
-  margin-top: 50px;
   background-color: rgb(191, 188, 188);
 }
-
-.rodape ul {
-  padding: 8px;
+.rodape{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1.5em; 
 }
+.rodape ul {
+  display: flex;
+  gap: 1.5rem;
+} 
 
 span {
   font-size: 10px;
+  letter-spacing: 0.2rem;
 }
 
 
