@@ -1,0 +1,50 @@
+
+span {
+    font-size: 10px;
+    letter-spacing: 0.2rem;
+}
+  
+#texto-link > ul > li a {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #8f4309dc;
+}
+  
+#texto-link > li a {
+    color: #8f4309dc;
+}
+  
+#texto-link > li {
+    font-size: 20px;
+}
+ 
+.item-menu > li > a {
+    color: #8f4309dc;
+}
+  
+.item-menu > li a:hover {
+    color: coral;
+     letter-spacing: 0.1em ;
+     transition:1s;
+}
+  
+
+/* FALE CONOSCO */
+
+.faleconosco .formulario input, textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--white);
+    opacity: 50%;
+    outline: none;
+    color: #44403c;
+    font-size: 15px;
+    box-shadow: 0px 2px 15px -5px var(--white);
+}
+
+.faleconosco textarea {
+    height: 6em;
+    width: 100%;
+}
+
+  

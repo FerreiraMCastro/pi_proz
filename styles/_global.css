@@ -1,0 +1,310 @@
+/* ESTILOS */
+@import url('../styles/text-styles.css');
+@import url('../styles/form.css');
+@import url('../styles/paginicial.css');
+@import url('../styles/sobrenos.css');
+@import url('../styles/styles.css');
+
+/* FONTES */
+@import url('https://fonts.googleapi.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapi.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-bg: #e2e8f0;
+    --header-bg:  rgb(191,188,188);
+    --white:#fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg);
+}
+
+header, main, footer {
+    display: flex;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+    color:  #8f4309dc;  
+}
+
+a:hover{
+    color: coral;
+    letter-spacing: 0.1em ;
+    transition:1s;  
+}
+
+li {
+    font-size: 1rem;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0.5rem 4.5rem;
+ 
+    box-shadow: 0px 10px 20px #00000051;
+    background-color:var(--header-bg);
+}
+
+/* .container {
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    align-items: center;
+    padding: 0.5rem 4.5rem;
+    background-color: rgb(191, 188, 188);
+    box-shadow: 0px 10px 20px #00000051;
+} */
+
+.menu {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+  
+.menu > div {
+    display: flex;
+    gap: 20px;
+}
+  
+.menu > ul {
+    list-style: none;
+    display: flex;
+    /* gap: 8rem; */
+}
+
+
+.item-menu > li:hover {
+    transform: scale(1.2);
+}
+  
+.item-menu > li a:hover {
+    color: #8f7d09dc;
+}
+  
+.item-menu > li > a {
+    color: #8f4309dc;
+}
+
+header #logo {
+    width: 5rem;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+header #pesquisa input[type="search"] {
+    border: 2px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px;
+}
+
+nav a {
+    margin: 15px;
+}
+
+
+/* HERO - MAIN SECTION */
+
+main {
+    /*background-color: rgb(144, 238, 144);*/
+    /* min-height: 100vh; */
+ 
+    margin-top: 106px;
+    padding: 50px 0px;
+}
+
+.container-main {
+    /* display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 10vw; */
+}
+
+
+/* FOOTER */
+
+footer {
+    align-items: center;
+    background-color: rgb(191,188,188);
+    color: #000;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    /* padding: 10px; */
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer .copy {
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
+    /* margin-bottom: 1.5em; */
+}
+
+footer {
+    width: 100vw;
+    /* height: 15vh; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 60px; */
+    box-shadow: -5px 15px 30px #87550a51;
+    background-color: rgb(191, 188, 188);
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1.5em; 
+}
+.rodape ul {
+    display: flex;
+    gap: 1.5rem;
+} 
+  
+
+/* FALE CONOSCO */
+.faleconosco {
+    align-items: center;
+    padding: 10vw;
+    width: 100vw;
+}
+
+div.imgemcapa {
+    background-image: url(../img/faleconosco.png);
+    background-position: right;
+    background-size: cover;
+    height: 642px;
+    padding: 10px;
+    width: 32vw;
+}
+
+.faleconosco .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(191, 188, 188);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000051;
+    padding: 1rem;
+}
+
+.faleconosco .formulario form {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.faleconosco .btn-enviar{
+    width: 45%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: chocolate;
+  box-shadow: 0px 10px 40px -10px #fff;
+}
+
+/* CSS CARRINHO DE COMPRAS */
+
+main{
+    justify-content: center;
+}
+
+#carrinho {
+    align-items: center;
+    padding: 10vw;
+    width: 100vw;
+}
+
+#listaCarrinho {
+    display: flex;
+    flex-basis: 600px;
+    flex-direction: column;
+    margin-block: 30px;
+}
+
+#listaCarrinho .produto {
+    background-color: rgb(191, 188, 188);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000051;
+    display: flex;
+    flex-direction: row;
+    margin-block: 30px;
+    padding: 10px;
+}
+
+#listaCarrinho .produto .prodImagem {
+    margin-inline: 30px;
+    max-width: 120px;
+}
+
+#listaCarrinho .produto .prodDetalhes form {
+    margin-block: 8px;
+}
+
+#listaCarrinho #checkout {
+    display: flex;
+    justify-content: end;
+    font-size: 1.3em;
+    gap: 30px;
+}
+
+#checkout .btn-enviar{
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    color: chocolate;
+    box-shadow: 0px 10px 40px -10px #fff;
+}

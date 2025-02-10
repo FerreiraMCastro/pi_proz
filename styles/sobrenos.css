@@ -1,0 +1,41 @@
+main{
+    /* background-color: aqua; */
+    /* width: 100vw;
+    margin-top: 100px; */
+    /* padding-top: 50px;   */
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+}
+
+section div {
+    background-color: rgb(191,188,188);
+    height: 30%;
+    width: 30%;
+    margin: 20px;
+    padding: 12px;
+}
+
+/*
+config. temp. main
+display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*background-color: rgb(144, 238, 144);*/
+    /* min-height: 100vh;
+    padding: 130px 30px 0 30px;
+
+header #pesquisa input[type="search"] {
+    border: 2px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px;
+}    
+
+*/

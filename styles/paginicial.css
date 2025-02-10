@@ -1,0 +1,42 @@
+
+.carro-perfil {
+  width: 20px;
+}
+
+
+.box-img-fem {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 50px; */
+  
+}
+
+.box-img-masc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* margin-top: 50px; */
+  
+}
+
+.img-mulher {
+  width: 500px;
+  height: 700px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.img-homem {
+  width: 500px;
+  height: 700px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+
+

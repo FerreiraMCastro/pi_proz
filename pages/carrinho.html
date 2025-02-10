@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto Integrador - Grupo 05</title>
+    <link rel="icon" href="img/favicon.png" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/carrinho_faleconosco.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--  CABEÇALHO -->
+    <header class="container">
+      <img id="logo" src="../img/mogmog_logo-removebg-preview.png" />
+      <nav class="menu">
+        <ul class="item-menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobrenos.html">Sobre Nós</a></li>
+          <li><a href="../faleconosco.html">Fale conosco</a></li>
+          <li><a href="../formulario.html">Cadastre-se</a></li>
+        </ul>
+        <div>
+          <a href="carrinho.html"
+            ><img class="carro-perfil" src="../img/compras-online.png" />
+          </a>
+          <a href="formulario.html">
+            <img class="carro-perfil" src="../img/do-utilizador.png" />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="carrinho">
+      <div id="listaCarrinho">
+        <div class="produto">
+          <img src="img/carrinhocompras.png" class="prodImagem" />
+          <div class="prodDetalhes">
+            <h1>Produto 001</h1>
+            <h2>R$ 100,00</h2>
+            <form>
+              <label>Quantidade: </label
+              ><input type="number" value="1" size="3" />
+            </form>
+            <label>Subtotal: R$ 100,00</label>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="img/carrinhocompras.png" class="prodImagem" />
+          <div class="prodDetalhes">
+            <h1>Produto 002</h1>
+            <h2>R$ 80,00</h2>
+            <form>
+              <label>Quantidade: </label
+              ><input type="number" value="2" size="3" />
+            </form>
+            <label>Subtotal: R$ 160,00</label>
+          </div>
+        </div>
+        <div id="checkout">
+          <p>Total do pedido: <strong>R$ 260,00</strong></p>
+          <input class="btn-enviar" type="submit" value="Comprar" />
+        </div>
+      </div>
+    </main>
+
+    <!-- RODAPE -->
+    <footer>
+      <span class="copy">&copy 2024 - Projeto Integrador</span>
+      <nav>
+        <a href="#"><img src="img/instagram.png" width="32" align="left" /></a>
+        <a href="#"><img src="img/youtube.png" width="32" align="left" /></a>
+        <a href="#"><img src="img/tiktok.png" width="32" align="left" /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
