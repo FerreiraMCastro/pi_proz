@@ -19,6 +19,7 @@ body {
 header, main, footer {
     display: flex;
     flex-direction: row;
+   
 }
 
 header {
@@ -27,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 4.5rem;
-    position: fixed;
+    position: fixed; 
     width: 100vw;
     box-shadow: 0px 10px 20px #00000051;
 }
@@ -67,26 +68,37 @@ header #logo {
     margin: 5px;
 }
 
-header #pesquisa input[type="search"] {
-    border: 2px solid gray;
-    border-radius: 8px;
-    height: 30px;
-    font-size: 16px;
-    padding: 3px;
-}
-
 nav a {
     margin: 15px;
 }
 
-main {
+main{
+    /* background-color: aqua; */
+    width: 100vw;
+    margin-top: 100px;
+    padding-top: 50px;
+
+    
+    
+}
+
+section{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    /*background-color: rgb(144, 238, 144);*/
-    min-height: 100vh;
-    padding: 130px 30px 0 30px;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
 }
+
+section div {
+    background-color: rgb(191,188,188);
+    height: 30%;
+    width: 30%;
+    margin: 20px;
+    padding: 12px;
+}
+
+
 
 footer {
     align-items: center;
@@ -109,3 +121,22 @@ footer .copy {
     letter-spacing: 0.2rem;
     margin-bottom: 1.5em;
 }
+
+/*
+config. temp. main
+display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /*background-color: rgb(144, 238, 144);*/
+    /* min-height: 100vh;
+    padding: 130px 30px 0 30px;
+
+header #pesquisa input[type="search"] {
+    border: 2px solid gray;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 16px;
+    padding: 3px;
+}    
+
+*/
