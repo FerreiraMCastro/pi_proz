@@ -1,0 +1,81 @@
+/* CSS FALE CONOSCO */
+
+.faleconosco {
+    align-items: center;
+    padding-top: 120px;
+    width: 100vw;
+}
+
+
+.faleconosco div.imgemcapa {
+    height: 642px;
+    padding: 1rem;
+    width: 450px;
+}
+
+
+.faleconosco .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(191, 188, 188);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000051;
+    padding: 1rem;
+    width: 630px;
+}
+
+.faleconosco .formulario form {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.faleconosco .formulario input, textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    opacity: 50%;
+    outline: none;
+    color: #44403c;
+    font-size: 15px;
+    box-shadow: 0px 2px 15px -5px #fff;
+}
+
+.faleconosco textarea {
+    height: 6em;
+    width: 100%;
+}
+
+.faleconosco .btn-enviar{
+    width: 45%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  letter-spacing: 0.2rem;
+  color: chocolate;
+  box-shadow: 0px 10px 40px -10px #fff;
+}
+
+
+/* VALIDAÇÃO DO FORMULÁRIO */
+
+.faleconosco .msg-erro {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    display: block;
+}
+
+.faleconosco .helper-text {
+    text-align: right;
+    display: none;
+    color: #ff0000;
+    font-size: 0.8rem;
+}

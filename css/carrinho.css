@@ -1,0 +1,64 @@
+/* CSS CARRINHO DE COMPRAS */
+
+main{
+    justify-content: center;
+}
+
+#carrinho {
+    align-items: center;
+    padding: 10vw;
+    width: 100vw;
+}
+
+#listaCarrinho {
+    display: flex;
+    flex-basis: 600px;
+    flex-direction: column;
+    margin-block: 30px;
+}
+
+#listaCarrinho .produto {
+    background-color: rgb(191, 188, 188);
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px #00000051;
+    display: flex;
+    flex-direction: row;
+    margin-block: 30px;
+    padding: 10px;
+}
+
+#listaCarrinho .produto .prodImagem {
+    margin-inline: 30px;
+    max-width: 120px;
+}
+
+#listaCarrinho .produto .prodDetalhes form {
+    margin-block: 8px;
+}
+
+#listaCarrinho #checkout {
+    display: flex;
+    justify-content: end;
+    font-size: 1.3em;
+    gap: 30px;
+}
+
+#checkout .btn-enviar{
+    width: 45%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 10px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    color: chocolate;
+    box-shadow: 0px 10px 40px -10px #fff;
+}
+
+
+

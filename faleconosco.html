@@ -7,20 +7,36 @@
   <title>Projeto Integrador - Grupo 05</title>
   <link rel="icon" href="img/favicon.png">
   <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/carrinho_faleconosco.css" rel="stylesheet">
+  <link href="./css/style-geral.css" rel="stylesheet">
+  <link href="./css/faleconosco.css" rel="stylesheet">
+
+  <script src="jscript/faleconosco.js" defer></script>
 </head>
 
 <body>
 <!--  CABEÇALHO -->
-  <header class="container">
-    <a href="index.html"><img src="img\mogmog_logo-removebg-preview.png" align="left" width="64" id="logo"></a>
-    <!--
-    <div id="pesquisa">
-      <form>
-        <input type="search" name="q" aria-placeholder="Pesquisar" placeholder="Pesquisar...">
-        <button type="submit"><img src="img\lupa.png" alt="Lupa" width="14"></button>
-      </form>
+  <header>
+    <div id="cabecalho">
+      <a href="index.html"><img src="img\mogmog_logo-removebg-preview.png" align="left" width="64" id="logo"></a>
+      <!--
+      <div id="pesquisa">
+        <form>
+          <input type="search" name="q" aria-placeholder="Pesquisar" placeholder="Pesquisar...">
+          <button type="submit"><img src="img\lupa.png" alt="Lupa" width="14"></button>
+        </form>
+      </div>
+      -->
+      <nav class="menu">
+        <ul class="item-menu">
+          <li><a href="index.html">In&iacute;cio</a></li>
+          <li><a href="sobrenos.html">Sobre n&oacute;s</a></li>
+          <li><a href="faleconosco.html">Fale conosco</a></li>
+          <li><a href="formulario.html">Cadrastre-se</a></li>
+          <li><a href="carrinho.html"><img src="img/compras-online.png" width="32" align="right"></a></li>
+          <li><a href="formulario.html"><img src="img/do-utilizador.png" width="32" align="right"></a></li>
+      </nav>
     </div>
+<<<<<<< HEAD
     -->
     <nav class="menu">
       <ul class="item-menu">
@@ -31,38 +47,59 @@
         <li><a href="carrinho.html"><img src="img/compras-online.png" width="32" align="right"></a></li>
         <li><a href="formulario.html"><img src="img/do-utilizador.png" width="32" align="right"></a></li>
     </nav>
+=======
+>>>>>>> db19f9f (Implementando JavaScript (fale conosco))
   </header>
 
   <!--MAIN-->
   <main class="faleconosco">
     <div class="imgemcapa">
-      &nbsp;      
+      <img src="img/faleconosco.png" alt="Fale conosco" height="642px">      
     </div>
     
     <div class="formulario">
       <h1>Contato</h1>
       <p>Entre em contato conosco para tirar dúvidas, fazer sugestões ou reclamações. <br/>Estamos à disposição para atendê-lo.</p>
 
-      <form>
-          <!--<fieldset class="formfields">
-              <legend><h3>Envie-nos uma mensagem</h3></legend> -->
-              <label for="name">Nome:</label>
-              <input type="text" id="name" name="name" placeholder="Nome completo" required><br><br>
+      <form action="">
+        <label for="nomecontato">*Nome:</label>
+        <input type="text" id="nomecontato" name="nomecontato">
+        <p id="nomecontato-helper" class="helper-text">Mensagem de ajuda</p>
+    
+        <label for="email">*E-mail:</label>
+        <input type="email" id="email" name="email">
+        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+    
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="number" id="whatsapp" name="whatsapp">
+        <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
+    
+        <label for="mensagem">*Mensagem:</label>
+        <input type="" id="mensagem" name="mensagem">
+        <p id="mensagem-helper" class="helper-text">Mensagem de ajuda</p>
+    
+        <button type="submit" class="btn-enviar" name="enviar">Enviar</button>
+      </form>  
+      <!--
+      <form action="">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome completo" required><br><br>
               <label for="email">E-mail:</label>
               <input type="email" id="email" name="email" placeholder="meuemail@hot.com" required><br><br>
               <label for="tel">WhatsApp:</label>
               <input type="tel" id="tel" name="tel" placeholder="55 9 99998888" required><br><br>
               <label for="mensagem">Sua mensagem:</label><br><br>
               <textarea name="mensagem" id="mensagem" rows="10" placeholder="Escreva nos..." required></textarea><br>
-              <button class="btn-enviar" type="submit">Enviar</button>
-          <!--</fieldset>-->
-      </form>    
+              <button class="btn-enviar" type="submit" name="enviar">Enviar</button>
+      </form>
+      -->  
     </div>      
   
   </main>
 
   <!--FOOTER-->
   <footer>
+    <a href="https://wa.me/5500000000000?text=Oi,%20gostaria%20de%20trocar%20uma%20ideia." target="_blank"><img src="img/whatsapp.png" width="64" class="whatsapp"></a>
     <span class="copy">&copy 2024 - Projeto Integrador</span>
     <nav>
       <a href="#"><img src="img/instagram.png" width="32" align="left"></a>
