@@ -6,6 +6,8 @@ main{
 
 #carrinho {
     align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 10vw;
     width: 100vw;
 }
@@ -24,12 +26,17 @@ main{
     display: flex;
     flex-direction: row;
     margin-block: 30px;
-    padding: 10px;
+    padding: 1.5rem;
 }
 
 #listaCarrinho .produto .prodImagem {
     margin-inline: 30px;
     max-width: 120px;
+}
+
+#listaCarrinho .produto h1 {
+    font-size: 1.5em;
+    margin-block: 0;
 }
 
 #listaCarrinho .produto .prodDetalhes form {

@@ -1,45 +1,55 @@
 let inputContato = document.getElementById('nomecontato');
-let usernameLabel = document.querySelector('label[for="nomecontato"]');
-let usernameHelper = document.getElementById("nomecontato-helper");
+//let contatoLabel = document.querySelector('label[for="nomecontato"]');
+let contatoHelper = document.getElementById("nomecontato-helper");
 
 let inputEmail = document.getElementById('email');
-let emailLabel = document.querySelector('label[for="emailcontato"]');
-let emailHelper = document.getElementById("emailcontato-helper");
+//let emailLabel = document.querySelector('label[for="email"]');
+let emailHelper = document.getElementById("email-helper");
 
 let inputWhatsapp = document.getElementById('whatsapp');
+//let whatsappLabel = document.querySelector('label[for="whatsapp"]');
+let whatsappHelper = document.getElementById("whatsapp-helper");
 
 let inputMensagem = document.getElementById('mensagem');
-
-function validarFormulario(){
-    let nomeContato = inputContato.value;
-    let emailContato = inputEmail.value;
-    let mensagemContato = inputMensagem.value;
-
-    if(nomeContato.length < 3){
-        alert("O campo nome precisa ter no mínimo 3 caracteres.");
-    }
-
-    if(emailContato.length < 3){
-        alert("O campo email precisa ter no mínimo 3 caracteres.");
-    }
-
-    if(mensagemContato.length < 3){
-        alert("O campo mensagem precisa ter no mínimo 3 caracteres.");
-    }
-}
+//let mensagemLabel = document.querySelector('label[for="mensagem"]');
+let mensagemHelper = document.getElementById("mensagem-helper");
 
 
 function validarInput(input, min, helper){
-    input.addEventListener("blur", function(elemento){
+    input.addEventListener("input", function(elemento){
         let valorInput = elemento.target.value;
         if(valorInput.length < min){
-            alert(`O campo precisa ter no mínimo ${min} caracteres.`);
+            input.classList.add("input-error");
+            helper.classList.remove("error-deactive");
+            helper.classList.add("error-active");
+            helper.textContent = `O campo precisa ter no mínimo ${min} caracteres.`;
+        } else {
+            input.classList.remove("input-error");
+            helper.classList.remove("error-active");
+            helper.classList.add("error-deactive");
+            helper.textContent = "";
         }
+        console.log(valorInput);
     });
 }
 
-validarInput(inputContato, 3);
+function formatarCelular(celular){
+    //cria a variável celularFormatado e usa o método replace para formatar o celular
+    //onde $1 possui 2 dígitos, $2 possui 5 dígitos e $3 possui 4 dígitos
+    // sendo o $1 colocado entre parenteses e o $2 separado do $3 por um hífen
+    let celularFormatado = celular.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+    
+    //retorna o celular formatado
+    return celularFormatado;
+}
 
+inputWhatsapp.addEventListener("input", function(elemento){
+    let valorInput = elemento.target.value;
+    let valorFormatado = formatarCelular(valorInput);
+    elemento.target.value = valorFormatado;
+});
 
-btnEnviar.addEventListener('click', validarFormulario);
-
+validarInput(inputContato, 6, contatoHelper);
+validarInput(inputEmail, 6, emailHelper);
+validarInput(inputWhatsapp, 11, whatsappHelper);
+validarInput(inputMensagem, 20, mensagemHelper);

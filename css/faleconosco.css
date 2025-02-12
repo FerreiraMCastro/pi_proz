@@ -4,6 +4,7 @@
     align-items: center;
     padding-top: 120px;
     width: 100vw;
+    z-index: -1;
 }
 
 
@@ -12,7 +13,6 @@
     padding: 1rem;
     width: 450px;
 }
-
 
 .faleconosco .formulario {
     display: flex;
@@ -42,8 +42,9 @@
     box-shadow: 0px 2px 15px -5px #fff;
 }
 
-.faleconosco textarea {
+.faleconosco #mensagem {
     height: 6em;
+    resize: none;
     width: 100%;
 }
 
@@ -67,15 +68,20 @@
 
 /* VALIDAÇÃO DO FORMULÁRIO */
 
-.faleconosco .msg-erro {
-    border: 1px solid #ff0000;
+.faleconosco .helper-text {
+    text-align: right;
     color: #ff0000;
+    font-size: 0.8rem;
+}
+
+.faleconosco .helper-text.error-active {
     display: block;
 }
 
-.faleconosco .helper-text {
-    text-align: right;
+.faleconosco .helper-text.error-deactive {
     display: none;
-    color: #ff0000;
-    font-size: 0.8rem;
+}
+
+.faleconosco input.input-error, textarea.input-error{
+    background-color: rgb(248, 170, 156);
 }

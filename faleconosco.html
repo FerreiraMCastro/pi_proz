@@ -32,7 +32,8 @@
       </script>
     </header>
 
-  <!--MAIN-->
+  <!--MAIN-->    /*background-color: rgb(144, 238, 144);*/
+
   <main class="faleconosco">
     <div class="imgemcapa">
       <img src="img/faleconosco.png" alt="Fale conosco" height="642px">      
@@ -44,20 +45,20 @@
 
       <form action="">
         <label for="nomecontato">*Nome:</label>
-        <input type="text" id="nomecontato" name="nomecontato">
-        <p id="nomecontato-helper" class="helper-text">Mensagem de ajuda</p>
+        <input type="text" id="nomecontato" name="nomecontato" class="input-error">
+        <p id="nomecontato-helper" class="helper-text error-deactive">Mensagem de ajuda</p>
     
         <label for="email">*E-mail:</label>
-        <input type="email" id="email" name="email">
-        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+        <input type="email" id="email" name="email" class="input-error" class="input-error">
+        <p id="email-helper" class="helper-text error-deactive">Mensagem de ajuda</p>
     
         <label for="whatsapp">WhatsApp:</label>
-        <input type="number" id="whatsapp" name="whatsapp">
-        <p id="idade-helper" class="helper-text">Mensagem de ajuda</p>
+        <input type="tel" id="whatsapp" name="whatsapp" class="input-error" placeholder="(99) 99999-9999">
+        <p id="whatsapp-helper" class="helper-text error-deactive">Mensagem de ajuda</p>
     
         <label for="mensagem">*Mensagem:</label>
-        <input type="" id="mensagem" name="mensagem">
-        <p id="mensagem-helper" class="helper-text">Mensagem de ajuda</p>
+        <textarea rows="3" id="mensagem" name="mensagem" class="input-error"></textarea>
+        <p id="mensagem-helper" class="helper-text error-deactive">Mensagem de ajuda</p>
     
         <button type="submit" class="btn-enviar" name="enviar">Enviar</button>
       </form>  
