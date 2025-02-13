@@ -106,7 +106,7 @@ footer {
     height: 100px;
     /*justify-content: space-between;*/
     padding: 0.8rem;
-    position: fixed;
+    /*position: fixed;*/
     width: 100vw;
 }
 

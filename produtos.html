@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Integrador - Grupo 05</title>
+  <link rel="icon" href="img/favicon.png">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style-geral.css" rel="stylesheet">
+  <link href="./css/produtos.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous">
+  </script>
+  <script src="jscript/produtos.js" defer></script> <!--CARREGA OS PRODUTOS-->
+
+</head>
+
+<body>
+    <!--  CABEÇALHO -->
+    <header id="cabecalho">
+      <!-- 
+          Ao carregar a página o arquivo HEADER.HTML será incorporado ao aquivo atual
+          criando o cabeçalho navegável da página.
+      -->
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $("#cabecalho").load("html_imports/header.html");
+        });
+      </script>
+    </header>
+  
+    <main id="loja">
+        <div id="listaProdutos">
+        <!-- LISTA OS PRODUTOS DA LOJA -->
+        <!-- RENDERIZAÇÃO DINÂMICA JS -->
+        </div>
+    </main>
+
+    <!-- RODAPE -->
+    <footer id="rodape">
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#rodape").load("html_imports/footer.html");
+        });
+        </script>
+    </footer>
+</body>
+</html>
