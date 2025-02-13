@@ -28,6 +28,7 @@ header {
     background-color: rgb(191,188,188);
     display: flex;
     flex-direction: row;
+    gap: 1.3rem;
     justify-content: space-between;
     padding: 0.5rem 4.5rem;
     position: fixed;
@@ -85,18 +86,14 @@ header #pesquisa input[type="search"] {
     padding: 3px;
 }
 
-nav a {
-    margin: 15px;
-}
-
 main {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-height: 100vh;
-    padding-bottom: 110px;
     padding-top: 110px;
+    padding-bottom: 110px;
+    width: 100vw;
 }
 
 #categorias {
@@ -115,13 +112,10 @@ main {
 
 footer {
     align-items: center;
-    bottom: 0px;
     background-color: rgb(191,188,188);
     color: #000;
     flex-direction: column;
-    height: 100px;
     padding: 0.8rem;
-    position: fixed;
     width: 100vw;
 }
 
