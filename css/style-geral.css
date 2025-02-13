@@ -90,11 +90,27 @@ nav a {
 }
 
 main {
+    align-items: center;
     display: flex;
-    flex-direction: rown;
+    flex-direction: row;
     justify-content: center;
     min-height: 100vh;
     padding-bottom: 110px;
+    padding-top: 110px;
+}
+
+#categorias {
+    align-self: center;
+    background-color: #BEBDBB;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+
+#categorias img {
+    height: 400px;
+    padding: 30px;
 }
 
 footer {
@@ -104,9 +120,8 @@ footer {
     color: #000;
     flex-direction: column;
     height: 100px;
-    /*justify-content: space-between;*/
     padding: 0.8rem;
-    /*position: fixed;*/
+    position: fixed;
     width: 100vw;
 }
 

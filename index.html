@@ -1,5 +1,51 @@
-<script type="text/javascript">
-    $(document).ready(function() {
-      $().load("pag_marcia/index.html");
-    });
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Integrador - Grupo 05</title>
+  <link rel="icon" href="img/favicon.png">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style-geral.css" rel="stylesheet">
+  <link href="./css/produtos.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous">
   </script>
+
+</head>
+
+<body>
+    <!--  CABEÇALHO -->
+    <header id="cabecalho">
+      <!-- 
+          Ao carregar a página o arquivo HEADER.HTML será incorporado ao aquivo atual
+          criando o cabeçalho navegável da página.
+      -->
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $("#cabecalho").load("html_imports/header.html");
+        });
+      </script>
+    </header>
+  
+    <!-- CONTEÚDO -->
+    <main>
+      <div id="categorias">
+        <a href="produtos.html?categoria=feminino"><img src="img/capa_mulher-Photoroom.jpg" alt="Moda Feminina"></a>
+        <a href="produtos.html?categoria=masculino"><img src="img/home_homem-Photoroom.jpg" alt="Moda Masculina"></a>
+      </div>
+    </main>
+
+    <!-- RODAPE -->
+    <footer id="rodape">
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("#rodape").load("html_imports/footer.html");
+        });
+        </script>
+    </footer>
+</body>
+</html>
