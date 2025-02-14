@@ -31,15 +31,44 @@ function exibeCarrinho() {
             <img src="${produtos.foto}" alt="${produtos.nome}" class="prodImagem">
             <div class="prodDetalhes">
                 <h1>${produtos.nome}</h1>
-                <h2>R$ ${produtos.preco}</h2>
+                <h2>R$ <span class="precoprod">${produtos.preco}</span></h2>
                 <form>
                 <label>Quantidade: </label><input type="number" value="1" size="3">
                 </form>
-                <label>Subtotal: R$ 100,00</label>
+                <p><span class="subtotal"></span></p>
         `;
         const listaCarrinho = document.querySelector('#listaCarrinho');
         listaCarrinho.appendChild(produto);
     }
+    atualizaSubtotal();
+}
+
+function atualizaSubtotal() {
+    const quantidades = document.querySelectorAll('input[type="number"]');
+    const precosprod = document.querySelectorAll('.precoprod');
+    const subtotais = document.querySelectorAll('.subtotal');
+    const totalpedido = document.querySelector('#totalpedido');
+    let valortotal = 0;
+    for (let i=0; i<quantidades.length; i++) {
+        const quantidade = quantidades[i];
+        const precoprod = Number(precosprod[i].textContent);
+        const valor = quantidade.value * precoprod;
+        valortotal += valor;
+        subtotais[i].textContent = valor;
+    }
+    totalpedido.textContent = Number(valortotal).toFixed(2);
+}
+
+function atualizaQuantidades() {
+    const quantidades = document.querySelectorAll('input[type="number"]');
+    for (let i=0; i<quantidades.length; i++) {
+        const quantidade = quantidades[i];
+        quantidade.addEventListener('change', function() {
+            atualizaSubtotal();
+        });
+    }
 }
 
 exibeCarrinho();
+atualizaQuantidades();
+//atualizaSubtotal();
