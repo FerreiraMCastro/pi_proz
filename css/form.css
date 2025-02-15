@@ -42,8 +42,16 @@
 
 .menu > ul{
     display: flex;
-    gap: 8rem;
-    list-style: none;    
+    list-style: none;
+    /*
+        comentei o gap e
+        adicionei as linhas a baixo dele para distribuir o menu no espaço livre do cabeçalh0
+        (Jackson)
+    */
+    /*gap: 8rem;*/
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 li{

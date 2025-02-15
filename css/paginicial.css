@@ -33,7 +33,7 @@ body {
 }
 
 .menu {
-  width: 50%;
+  width: 100%; /*alterei para 100% para distribuir no espaço livre (Jackson)*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,15 @@ body {
 
 .menu > ul {
   display: flex;
-  gap: 8rem;
+  /*
+      comentei o gap e
+      adicionei as linhas a baixo dele para distribuir o menu no espaço livre do cabeçalh0
+      (Jackson)
+  */
+  /*gap: 8rem;*/
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .item-menu > li a:hover {

@@ -6,6 +6,17 @@
     <title>Projeto Integrador - Grupo 05</title>
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="../css/paginicial.css" />
+
+    <!-- Adição do script de responsividade Geral (jackson)-->
+    <link href="../css/style-geral-querys.css" rel="stylesheet" />
+
+    <!--
+        Adição do JQUERY para automatização de algumas funções do site (jackson)
+        caso não precise usar pode apagar. Eu usei para "importar" o cabeçalho e rodapé
+        padronizados em minhas páginas, mas não implementei essa funcionalidade nas outras
+        páginas.
+    -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -17,16 +28,18 @@
           <li><a href="sobrenos.html">Sobre Nós</a></li>
           <li><a href="../faleconosco.html">Fale conosco</a></li>
           <li><a href="../formulario.html">Cadastre-se</a></li>
-        </ul>
-        <div>
-          <a href="carrinho.html"
+          <!-- 
+              coloquei os icones de Carrinho e Usuário como item-menu
+              para manter o mesmo padrão de sistribuição do menu sem precisar
+              de css adicional (Jackson)
+          -->
+          <li><a href="carrinho.html"
             ><img class="carro-perfil" src="../img/compras-online.png"
-          /></a>
-
-          <a href="formulario.html"
+          /></a></li>
+          <li><a href="formulario.html"
             ><img class="carro-perfil" src="../img/do-utilizador.png"
-          /></a>
-        </div>
+          /></a></li>
+        </ul>
       </nav>
     </header>
 
