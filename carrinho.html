@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projeto Integrador - Grupo 05</title>
+    <link rel="icon" href="img/favicon.png" />
+    <!-- <link href="./css/style.css" rel="stylesheet"> -->
+    <link href="./css/style-geral.css" rel="stylesheet" />
+    <link href="./css/style-geral-querys.css" rel="stylesheet" />
+    <link href="./css/carrinho.css" rel="stylesheet" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projeto Integrador - Grupo 05</title>
-  <link rel="icon" href="img/favicon.png">
-  <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/style-geral.css" rel="stylesheet">
-  <link href="./css/carrinho.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="jscript/carrinho.js" defer></script>
+    <!--CARREGA OS PRODUTOS DO CARRINHO-->
+  </head>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous">
-  </script>
-  <script src="jscript/carrinho.js" defer></script> <!--CARREGA OS PRODUTOS DO CARRINHO-->
-
-</head>
-
-<body>
+  <body>
     <!--  CABEÇALHO -->
     <header id="cabecalho">
       <!-- 
@@ -26,31 +23,33 @@
           criando o cabeçalho navegável da página.
       -->
       <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
           $("#cabecalho").load("html_imports/header.html");
         });
       </script>
     </header>
-  
-  <main id="carrinho">
-    <div id="listaCarrinho">
-      <!-- LISTA OS PRODUTOS DO CARRINHO -->
-      <!-- RENDERIZAÇÃO DINÂMICA JS -->
-    </div>
-    <div id="checkout">
-      <p>Total do pedido: <strong><span id="totalpedido">R$ 260,00</span></strong></p>
-      <input class="btn-enviar" type="submit" value="Comprar">
-    </div>
-  </main>
-  
-  <!-- RODAPE -->
-  <footer id="rodape">
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#rodape").load("html_imports/footer.html");
-      });
-    </script>
-  </footer>
-</body>
 
+    <main id="carrinho">
+      <div id="listaCarrinho">
+        <!-- LISTA OS PRODUTOS DO CARRINHO -->
+        <!-- RENDERIZAÇÃO DINÂMICA JS -->
+      </div>
+      <div id="checkout">
+        <p>
+          Total do pedido:
+          <strong><span id="totalpedido">R$ 260,00</span></strong>
+        </p>
+        <input class="btn-enviar" type="submit" value="Comprar" />
+      </div>
+    </main>
+
+    <!-- RODAPE -->
+    <footer id="rodape">
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $("#rodape").load("html_imports/footer.html");
+        });
+      </script>
+    </footer>
+  </body>
 </html>

@@ -1,136 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-* {
-  box-sizing: border-box;
-  font-family: "Poppins", serif;
-  font-size: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/*@media (min-width: 750px){ */
 
-body {
-  background-color: #e2e8f0;
-  position: absolute;
-  width: 1280px;
-}
+    * {
+        box-sizing: border-box;
+        font-family: "Poppins", serif;
+        font-size: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-/* ESTILO GLOBAL DE CABECALHO E RODAPE */
+    body {
+        background-color: #e2e8f0;
+    }
 
-header, main, footer {
-    display: flex;
-    flex-direction: row;
-}
+    /* ESTILO GLOBAL DE CABECALHO E RODAPE */
 
-header {
-    align-items: center;
-    box-shadow: 0px 10px 20px #00000051;
-    background-color: rgb(191,188,188);
-    display: flex;
-    flex-direction: row;
-    gap: 1.3rem;
-    justify-content: space-between;
-    padding: 0.5rem 4.5rem;
-    position: fixed;
-    width: 100vw;
-    z-index: 1000;
-}
+    header, main, footer {
+        display: flex;
+        flex-direction: row;
+    }
 
-header.div {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1280px;
-}
+    header {
+        align-items: center;
+        box-shadow: 0px 10px 20px #00000051;
+        background-color: rgb(191,188,188);
+        display: flex;
+        flex-direction: row;
+        gap: 1.3rem;
+        justify-content: space-between;
+        padding: 0.5rem 4.5rem;
+        position: fixed;
+        width: 100vw;
+        z-index: 1000;
+    }
 
-header nav {
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-}
+    header.div {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1280px;
+    }
 
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+    header nav {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
 
-.item-menu img {
-    width: 20px;
-}
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 
-.item-menu > li:hover {
-    transform: scale(1.2);
-}
-  
-.item-menu > li a:hover {
-    color: #8f7d09dc;
-}
-  
-.item-menu > li > a {
-    color: #8f4309dc;
-}
+    .item-menu img {
+        width: 20px;
+    }
 
-header #logo {
-    width: 5rem;
-    border-radius: 50px;
-    margin: 5px;
-}
+    .item-menu > li:hover {
+        transform: scale(1.2);
+    }
+    
+    .item-menu > li a:hover {
+        color: #8f7d09dc;
+    }
+    
+    .item-menu > li > a {
+        color: #8f4309dc;
+    }
 
-header #pesquisa input[type="search"] {
-    border: 2px solid gray;
-    border-radius: 8px;
-    height: 30px;
-    font-size: 16px;
-    padding: 3px;
-}
+    header #logo {
+        width: 5rem;
+        border-radius: 50px;
+        margin: 5px;
+    }
 
-main {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 110px;
-    padding-bottom: 110px;
-    width: 100vw;
-}
+    header #cardapio {
+        display: none;
+    }
 
-#categorias {
-    align-self: center;
-    background-color: #BEBDBB;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100vw;
-}
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-block: 7rem;
+        width: 100vw;
+    }
 
-#categorias img {
-    height: 400px;
-    padding: 30px;
-}
+    #categorias {
+        align-self: center;
+        background-color: #BEBDBB;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+    }
 
-footer {
-    align-items: center;
-    background-color: rgb(191,188,188);
-    color: #000;
-    flex-direction: column;
-    padding: 0.8rem;
-    width: 100vw;
-}
+    #categorias img {
+        height: 400px;
+        padding: 30px;
+    }
 
-footer nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+    footer {
+        align-items: center;
+        background-color: rgb(191,188,188);
+        color: #000;
+        flex-direction: column;
+        padding: 0.8rem;
+        width: 100vw;
+    }
 
-footer .whatsapp {
-    position: fixed;
-    bottom: 120px;
-    right: 20px;
-}
-footer nav img{
-    margin: 0.2rem;
-}
+    footer nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    footer .whatsapp {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+    }
+    footer nav img{
+        margin: 0.2rem;
+    }
+/*}*/

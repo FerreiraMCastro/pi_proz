@@ -42,7 +42,7 @@
 
 .menu > ul{
     display: flex;
-    gap: 8rem;
+    /*gap: 8rem;*/
     list-style: none;    
 }
 

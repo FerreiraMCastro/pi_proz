@@ -33,9 +33,10 @@ function exibeCarrinho() {
                 <h1>${produtos.nome}</h1>
                 <h2>R$ <span class="precoprod">${produtos.preco}</span></h2>
                 <form>
-                <label>Quantidade: </label><input type="number" value="1" size="3">
+                <label>Quantidade: </label><input type="number" value="1" width="10" size="3">
                 </form>
                 <p><span class="subtotal"></span></p>
+            </div>
         `;
         const listaCarrinho = document.querySelector('#listaCarrinho');
         listaCarrinho.appendChild(produto);

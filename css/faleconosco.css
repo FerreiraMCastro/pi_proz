@@ -2,11 +2,9 @@
 
 .faleconosco {
     align-items: center;
-    padding-top: 120px;
     width: 100vw;
     z-index: -1;
 }
-
 
 .faleconosco div.imgemcapa {
     height: 642px;
