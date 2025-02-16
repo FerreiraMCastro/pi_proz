@@ -6,10 +6,10 @@
     z-index: -1;
 }
 
-.faleconosco div.imgemcapa {
+.faleconosco .imagemcapa {
     height: 642px;
     padding: 1rem;
-    width: 450px;
+    width: 35vw;
 }
 
 .faleconosco .formulario {
@@ -19,7 +19,7 @@
     border-radius: 15px;
     box-shadow: 0px 10px 20px #00000051;
     padding: 1rem;
-    width: 630px;
+    max-width: 35vw;
 }
 
 .faleconosco .formulario form {

@@ -9,6 +9,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        text-decoration: none;
     }
 
     body {
@@ -87,8 +88,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-block: 7rem;
+        padding-block: 6rem;
         width: 100vw;
+    }
+
+    #paginainicial{
+        background-color: #BEBDBB !important;
     }
 
     #categorias {
@@ -107,11 +112,20 @@
 
     footer {
         align-items: center;
+        bottom: 0;
         background-color: rgb(191,188,188);
         color: #000;
         flex-direction: column;
         padding: 0.8rem;
+        position: fixed;
         width: 100vw;
+    }
+
+    footer .copy {
+        font-size: 0.6rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 2.5em;
+        text-align: center;
     }
 
     footer nav {
