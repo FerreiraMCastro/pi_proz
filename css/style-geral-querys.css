@@ -132,6 +132,7 @@
 
   .faleconosco .formulario {
     width: 90vw !important;
+    max-width: 90vw !important;
   }
 
   /*FIM FALE CONOSCO*/

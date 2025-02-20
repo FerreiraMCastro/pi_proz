@@ -14,9 +14,9 @@ const produtosDB = [
         foto: 'produtos/tenisOlympikus.webp',
     },
     { 
-        id: 1,
+        id: 3,
         categoria: 'masculino',
-        nome: 'Calça Cargo', 
+        nome: 'Calça Cargo',
         preco: 69.99,
         foto: 'produtos/calcaCargo.jpeg',
     },
@@ -27,13 +27,15 @@ function exibeCarrinho() {
         const produtos = produtosDB[i];
         const produto = document.createElement('div');
         produto.classList.add('produto');
+        produto.classList.add('pID-'+produtos.id);
         produto.innerHTML = `
             <img src="${produtos.foto}" alt="${produtos.nome}" class="prodImagem">
             <div class="prodDetalhes">
                 <h1>${produtos.nome}</h1>
                 <h2>R$ <span class="precoprod">${produtos.preco}</span></h2>
                 <form>
-                <label>Quantidade: </label><input type="number" value="1" width="10" size="3">
+                <label>Quantidade: </label><input type="number" value="1" width="10" size="3" min="1">
+                <img src="img/bin-preto.png" class="lixeira" onClick="removerProduto(${produtos.id});" id="${produtos.id}">
                 </form>
                 <p><span class="subtotal"></span></p>
             </div>
@@ -42,6 +44,21 @@ function exibeCarrinho() {
         listaCarrinho.appendChild(produto);
     }
     atualizaSubtotal();
+}
+
+function removerProduto(produtoID){
+    const Carrinho = document.getElementById('listaCarrinho');
+    const itensCarrinho = Carrinho.getElementsByClassName('produto');
+    console.log('ID de busca: pID-'+produtoID);
+    console.log('Tamanho da lista: '+itensCarrinho.length);
+    for (let i=0; i<itensCarrinho.length; i++){
+        console.log('Item da Lista: pID-'+i);
+        console.log(itensCarrinho[i].value);
+        if (itensCarrinho[i].value = 'pID-'+produtoID){
+            Carrinho.removeChild(itensCarrinho[i]);
+            console.log('Remover Item: '+itensCarrinho[i].value);
+        }
+    }
 }
 
 function atualizaSubtotal() {

@@ -11,29 +11,14 @@
   <link href="./css/style-geral-querys.css" rel="stylesheet" />
   <link href="./css/faleconosco.css" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous">
-  </script>
-
+  <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
+  <script src="jscript/header_footer.js" defer></script>
   <script src="jscript/faleconosco.js" defer></script>
 </head>
 
 <body>
     <!--  CABEÇALHO -->
-    <header id="cabecalho">
-      <!-- 
-          Ao carregar a página o arquivo HEADER.HTML será incorporado ao aquivo atual
-          criando o cabeçalho navegável da página.
-      -->
-      <script type="text/javascript">
-        $(document).ready(function() {
-          $("#cabecalho").load("html_imports/header.html");
-        });
-      </script>
-    </header>
-
-  <!--MAIN-->    /*background-color: rgb(144, 238, 144);*/
+    <!-- Carga dinâmica do header via JS-->>
 
   <main class="faleconosco">
     <div class="imagemcapa">
@@ -68,12 +53,6 @@
   </main>
 
   <!-- RODAPE -->
-  <footer id="rodape">
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $("#rodape").load("html_imports/footer.html");
-      });
-    </script>
-  </footer>
+  <!-- Insere o footer dinamicamente via JS -->
 </body>
 </html>
