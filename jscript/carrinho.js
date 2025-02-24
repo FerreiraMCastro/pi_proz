@@ -27,7 +27,7 @@ function exibeCarrinho() {
         const produtos = produtosDB[i];
         const produto = document.createElement('div');
         produto.classList.add('produto');
-        produto.classList.add('pID-'+produtos.id);
+        produto.setAttribute('id', 'pID-'+produtos.id);
         produto.innerHTML = `
             <img src="${produtos.foto}" alt="${produtos.nome}" class="prodImagem">
             <div class="prodDetalhes">
@@ -47,18 +47,10 @@ function exibeCarrinho() {
 }
 
 function removerProduto(produtoID){
-    const Carrinho = document.getElementById('listaCarrinho');
-    const itensCarrinho = Carrinho.getElementsByClassName('produto');
-    console.log('ID de busca: pID-'+produtoID);
-    console.log('Tamanho da lista: '+itensCarrinho.length);
-    for (let i=0; i<itensCarrinho.length; i++){
-        console.log('Item da Lista: pID-'+i);
-        console.log(itensCarrinho[i].value);
-        if (itensCarrinho[i].value = 'pID-'+produtoID){
-            Carrinho.removeChild(itensCarrinho[i]);
-            console.log('Remover Item: '+itensCarrinho[i].value);
-        }
-    }
+    const Carrinho = document.getElementById('listaCarrinho'); //captura o elemento pai
+    const itemCarrinho = document.getElementById('pID-'+produtoID); // captura o elemento filho
+    Carrinho.removeChild(itemCarrinho); //remove do elemento pai o elemento filho
+    atualizaSubtotal();
 }
 
 function atualizaSubtotal() {

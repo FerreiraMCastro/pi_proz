@@ -26,7 +26,7 @@
 
   /*MENU CARDAPIO*/
   header #cardapio {
-    cursor: pointer;
+    /*cursor: pointer;*/
     display: block;
     margin-right: 0.5rem;
     width: 3rem;

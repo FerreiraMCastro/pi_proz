@@ -14,7 +14,8 @@ header.innerHTML = `
       <li><a href="formulario.html"><img src="img/do-utilizador.png" width="32" align="right"></a></li>
     </ul>
   </nav>
-  <img src="img/cardapio.png" width="32" align="right" id="cardapio">
+  <input type="image" id="cardapio" src="img/cardapio.png" width="32" align="right" />
+  <!-- <img src="img/cardapio.png" width="32" align="right" id="cardapio"> -->
   `;
 
   /* Insere o script para o MENU MOBILE */
