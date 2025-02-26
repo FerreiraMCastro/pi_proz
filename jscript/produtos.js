@@ -141,6 +141,7 @@ const produtosDB = [
     },
 ]
 
+/*FUNÇÕES DE GESTÃO DOS PRODUTOS*/
 
 function exibeProdutos(categoria) {
     for (let i=0; i<produtosDB.length; i++) {
@@ -152,17 +153,35 @@ function exibeProdutos(categoria) {
                 <div class="infoProduto">
                     <h2>${produtosDB[i].nome}</h2>
                     <p>${produtosDB[i].preco}</p>
-                    <button>Comprar</button>
+                    <button class="btnComprar" onclick="colocarNoCarrinho(${produtosDB[i].id})">Comprar</button>
                 </div>`;
             const listaProdutos = document.querySelector('#listaProdutos');
             listaProdutos.appendChild(produto);
         }
     }
-    //const produtos = produtosDB[i];
-    
+}
+
+function colocarNoCarrinho(id){
+    if (window.localStorage){
+        let itemCarrinho = {};
+        for (let i=0; i<produtosDB.length; i++){
+            if (produtosDB[i].id == id){
+                itemCarrinho.id = produtosDB[i].id;
+                itemCarrinho.nome = produtosDB[i].nome;
+                itemCarrinho.categoria = produtosDB[i].categoria;
+                itemCarrinho.preco = produtosDB[i].preco;
+                itemCarrinho.foto = produtosDB[i].foto;
+            }
+        }
+        localStorage.setItem("itemCarrinho-"+localStorage.length, JSON.stringify(itemCarrinho));
+        let cont = localStorage.length;
+        console.log("Contador: "+cont);
+        console.log("Itens Armazenados"+localStorage.length);
+    }
 }
 
 const params = new URLSearchParams(window.location.search);
 const categoria = params.get('categoria');
 
 exibeProdutos(categoria);
+
