@@ -1,52 +1,50 @@
-const produtosDB = [
-    { 
-        id: 1,
-        categoria: 'masculino',
-        nome: 'Kit 5 camisetas', 
-        preco: 59.99,
-        foto: 'produtos/kit5camisetas.webp',
-    },
-    { 
-        id: 2,
-        categoria: 'masculino',
-        nome: 'Tenis Olympikus', 
-        preco: 89.99,
-        foto: 'produtos/tenisOlympikus.webp',
-    },
-    { 
-        id: 3,
-        categoria: 'masculino',
-        nome: 'Calça Cargo',
-        preco: 69.99,
-        foto: 'produtos/calcaCargo.jpeg',
-    },
-]
+/* CRIA UM OBJETO QUE VAI RECEBER OS ITENS QUE FORAM INSERIDOS NO CARRINHO */
+const itensDB = [];
+
+function carregaItensCarrinho(){
+    for (let i=0; i<localStorage.length; i++){
+        console.log(localStorage.getItem("itemCarrinho-"+i));
+        itensDB[i] = JSON.parse(localStorage.getItem("itemCarrinho-"+i));
+        console.log(itensDB[i]);
+    }
+}
 
 function exibeCarrinho() {
-    for (let i=0; i<produtosDB.length; i++) {
-        const produtos = produtosDB[i];
-        const produto = document.createElement('div');
-        produto.classList.add('produto');
-        produto.setAttribute('id', 'pID-'+produtos.id);
+    const produto = document.createElement('div');
+    const listaCarrinho = document.querySelector('#listaCarrinho');
+    
+    if (itensDB.length<=0){
         produto.innerHTML = `
-            <img src="${produtos.foto}" alt="${produtos.nome}" class="prodImagem">
-            <div class="prodDetalhes">
-                <h1>${produtos.nome}</h1>
-                <h2>R$ <span class="precoprod">${produtos.preco}</span></h2>
-                <form>
-                <label>Quantidade: </label><input type="number" value="1" width="10" size="3" min="1">
-                <img src="img/bin-preto.png" class="lixeira" onClick="removerProduto(${produtos.id});" id="${produtos.id}">
-                </form>
-                <p><span class="subtotal"></span></p>
-            </div>
+            <h1>Não há produtos em seu carrinho</h1>
         `;
-        const listaCarrinho = document.querySelector('#listaCarrinho');
-        listaCarrinho.appendChild(produto);
+    } else {
+        for (let i=0; i<itensDB.length; i++) {
+            const produtos = itensDB[i];
+            produto.classList.add('produto');
+            produto.setAttribute('id', 'pID-'+produtos.id);
+            produto.innerHTML = `
+                <img src="${produtos.foto}" alt="${produtos.nome}" class="prodImagem">
+                <div class="prodDetalhes">
+                    <h1>${produtos.nome}</h1>
+                    <h2>R$ <span class="precoprod">${produtos.preco}</span></h2>
+                    <form>
+                    <label>Quantidade: </label><input type="number" value="1" width="10" size="3" min="1">
+                    <img src="img/bin-preto.png" class="lixeira" onClick="removerProduto(${produtos.id});" id="${produtos.id}">
+                    </form>
+                    <p><span class="subtotal"></span></p>
+                </div>
+            `;
+            listaCarrinho.appendChild(produto);
+        }
+        atualizaSubtotal();
     }
-    atualizaSubtotal();
 }
 
 function removerProduto(produtoID){
+    //REMOVE O PRODUTO DO localstorage
+    localStorage.removeItem(Number(produtoID));
+    
+    //REMOVE O PRODUTO DA PAGINA DE CARRINHO
     const Carrinho = document.getElementById('listaCarrinho'); //captura o elemento pai
     const itemCarrinho = document.getElementById('pID-'+produtoID); // captura o elemento filho
     Carrinho.removeChild(itemCarrinho); //remove do elemento pai o elemento filho
@@ -79,6 +77,8 @@ function atualizaQuantidades() {
     }
 }
 
+
+carregaItensCarrinho();
 exibeCarrinho();
 atualizaQuantidades();
 //atualizaSubtotal();
