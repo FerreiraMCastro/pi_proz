@@ -11,6 +11,7 @@
 
   <!-- Adição do script de responsividade Geral (jackson)-->
   <link href="./css/style-geral-querys.css" rel="stylesheet" />
+  <script src="jscript\form.js" defer></script>
 
   <!--
         Adição do JQUERY para automatização de algumas funções do site (jackson)
@@ -18,9 +19,10 @@
         padronizados em minhas páginas, mas não implementei essa funcionalidade nas outras
         páginas.
     -->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script> 
   <!-- Script do menu haburger para mobile (Jackson)-->
-  <script src="jscript/mobilemenu.js" defer></script>
+   <script src="jscript/mobilemenu.js" defer></script> 
+  
 </head>
 
 <body>
@@ -60,12 +62,12 @@
         </div>
       </section>
       <div class="right-login">
-        <form action="">
+        <form  id="form">
           <div class="card-login">
 
             <h1>Cadastrar</h1>
             <div class="text-field">
-              <label for="usuario">Usuário</label>
+              <label for="nome">Usuário</label>
               <input type="text" name="nome" id="nome" placeholder="nome">
             </div>
 
@@ -75,7 +77,7 @@
             </div>
 
             <div class="text-field">
-              <label for="senha">Celular</label>
+              <label for="tel">Celular</label>
               <input type="tel" name="tel" id="tel" placeholder="( ) 9999-9999" required>
             </div>
             <div class="text-field">
@@ -84,7 +86,7 @@
               <input type="password" name="senha" id="senha" placeholder="criar senha" required>
             </div>
 
-            <button class="btn-login" type="button">Entrar</button>
+            <button class="btn-login"  type="submit" id="btn">Entrar</button>
            
           </div>
         </form>
