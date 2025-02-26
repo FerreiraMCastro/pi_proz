@@ -6,8 +6,8 @@ header.innerHTML = `
   <a href="index.html"><img src="img/mogmog_logo-removebg-preview.png" align="left" width="64" id="logo"></a>
   <nav class="menu">
     <ul class="item-menu">
-      <li><a href="index.html">In&iacute;cio</a></li>
-      <li><a href="./pag_marcia/sobrenos.html">Sobre n&oacute;s</a></li>
+      <li><a href="inicio.html">In&iacute;cio</a></li>
+      <li><a href="sobrenos.html">Sobre n&oacute;s</a></li>
       <li><a href="faleconosco.html">Fale conosco</a></li>
       <li><a href="formulario.html">Cadrastre-se</a></li>
       <li><a href="carrinho.html"><img src="img/compras-online.png" width="32" align="right"></a></li>

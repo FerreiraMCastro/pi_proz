@@ -10,7 +10,7 @@
 }
 
 body {
-  height: 2000px;
+  /* height: 2000px; */ /* comentei para retirar a autora e o footer ficar normal*/
   background-color: #e2e8f0;
   position: absolute;
 }
@@ -138,7 +138,7 @@ a {
 
 footer {
   width: 100vw;
-  height: 15vh;
+  height: 15vh; 
   display: flex;
   justify-content: center;
   margin-top: 60px;
