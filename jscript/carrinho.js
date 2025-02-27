@@ -2,34 +2,56 @@
 const itensDB = [];
 
 function carregaItensCarrinho(){
-    for (let i=0; i<localStorage.length; i++){
-        console.log(localStorage.getItem("itemCarrinho-"+i));
-        itensDB[i] = JSON.parse(localStorage.getItem("itemCarrinho-"+i));
-        console.log(itensDB[i]);
+    let busca = false; //é necessário (re)buscar?
+    let chaveStorage = 0; //em caso de rebusca, inicie com com a chave 0
+    const tamanho = localStorage.length; //qual o tamanho do armazenamento local?
+    console.log("Tamanho do armazenamento: "+localStorage.length);
+    
+    if (localStorage.length>0) {
+        for (let i=0; i<localStorage.length; i++){
+            //console.log("Item a ser carregado: "+localStorage.getItem(i));
+            //itensDB[i] = JSON.parse(localStorage.getItem(i)); //carregue o objeto com os dados JSON do armazenamento
+            //if (itensDB[i] != null) { //se houver sucesso na carga 
+            //    itensDB[i].chave = i; //defina o elemento chave com o valor de i
+            //} else { //se não conseguir carregar os dados JSON faça uma (re)busca
+                busca = true;
+                
+                while (busca) {
+                    itensDB[i] = JSON.parse(localStorage.getItem(chaveStorage));
+                    if (itensDB[i] != null){
+                        busca = false;
+                        itensDB[i].chave = chaveStorage;
+                    }
+                    console.log("Indice de busca: "+chaveStorage);
+                    console.log("Continuar busca: "+busca);
+
+                    chaveStorage++;
+                }
+                
+            //}
+        }
     }
+    
+    console.log("Total de Itens a exibir: "+itensDB.length);
 }
 
 function exibeCarrinho() {
-    const produto = document.createElement('div');
     const listaCarrinho = document.querySelector('#listaCarrinho');
     
-    if (itensDB.length<=0){
-        produto.innerHTML = `
-            <h1>Não há produtos em seu carrinho</h1>
-        `;
-    } else {
+    if (itensDB.length>0) {
         for (let i=0; i<itensDB.length; i++) {
-            const produtos = itensDB[i];
+            const produto = document.createElement('div');
+            const itemCarrinho = itensDB[i];
             produto.classList.add('produto');
-            produto.setAttribute('id', 'pID-'+produtos.id);
+            produto.setAttribute('id', 'pID-'+itemCarrinho.id);
             produto.innerHTML = `
-                <img src="${produtos.foto}" alt="${produtos.nome}" class="prodImagem">
+                <img src="${itemCarrinho.foto}" alt="${itemCarrinho.nome}" class="prodImagem">
                 <div class="prodDetalhes">
-                    <h1>${produtos.nome}</h1>
-                    <h2>R$ <span class="precoprod">${produtos.preco}</span></h2>
+                    <h1>${itemCarrinho.nome}</h1>
+                    <h2>R$ <span class="precoprod">${itemCarrinho.preco}</span></h2>
                     <form>
                     <label>Quantidade: </label><input type="number" value="1" width="10" size="3" min="1">
-                    <img src="img/bin-preto.png" class="lixeira" onClick="removerProduto(${produtos.id});" id="${produtos.id}">
+                    <img src="img/bin-preto.png" class="lixeira" onClick="removerProduto(${itemCarrinho.id}, ${itemCarrinho.chave});"">
                     </form>
                     <p><span class="subtotal"></span></p>
                 </div>
@@ -37,12 +59,18 @@ function exibeCarrinho() {
             listaCarrinho.appendChild(produto);
         }
         atualizaSubtotal();
+    } else {
+        const produto = document.createElement('div');
+        produto.innerHTML = `
+            <h1>Não há produtos em seu carrinho</h1>
+        `;
+        listaCarrinho.appendChild(produto);
     }
 }
 
-function removerProduto(produtoID){
+function removerProduto(produtoID, chaveStorage){
     //REMOVE O PRODUTO DO localstorage
-    localStorage.removeItem(Number(produtoID));
+    localStorage.removeItem(Number(chaveStorage));
     
     //REMOVE O PRODUTO DA PAGINA DE CARRINHO
     const Carrinho = document.getElementById('listaCarrinho'); //captura o elemento pai

@@ -173,9 +173,7 @@ function colocarNoCarrinho(id){
                 itemCarrinho.foto = produtosDB[i].foto;
             }
         }
-        localStorage.setItem("itemCarrinho-"+localStorage.length, JSON.stringify(itemCarrinho));
-        let cont = localStorage.length;
-        console.log("Contador: "+cont);
+        localStorage.setItem(localStorage.length, JSON.stringify(itemCarrinho));
         console.log("Itens Armazenados"+localStorage.length);
     }
 }

@@ -7,19 +7,12 @@
     <link rel="icon" href="img/favicon.png" />
     
 
-    <!-- Adição do script de responsividade Geral (jackson)-->
-    <link href="./css/style-geral-querys.css" rel="stylesheet" />
-    <link href="./css/style-geral.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="paginicial.css" /> -->
-    <!--
-        Adição do JQUERY para automatização de algumas funções do site (jackson)
-        caso não precise usar pode apagar. Eu usei para "importar" o cabeçalho e rodapé
-        padronizados em minhas páginas, mas não implementei essa funcionalidade nas outras
-        páginas.
-    -->
-    <script src="jscript/header_footer.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <!-- Script do menu haburger para mobile (Jackson)-->
+  <!-- Adição do script de responsividade Geral -->
+  <link href="./css/style-geral-querys.css" rel="stylesheet" />
+  <link href="./css/style-geral.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="paginicial.css" /> -->
+  <script src="jscript/header_footer.js" defer></script>
+  <!-- Script do menu haburger para mobile -->
   <script src="./jscript/mobilemenu.js" defer></script>
 </head>
 
@@ -29,23 +22,27 @@
     <main class="container-main">
       <div class="box-img-fem">
         <figure>
+          <a href="produtos.html?categoria=feminino">
           <img
             class="img-mulher"
             src="./img/capa_mulher-Photoroom.jpg"
             alt="Modelo feminina"
             aria-label="Modelo feminino usando roupas da marca"
           />
+        </a>
         </figure>
       </div>
       
       <div class="box-img-masc">
         <figure>
+          <a href="produtos.html?categoria=masculino">
           <img
             class="img-homem"
             src="./img/home_homem-Photoroom.jpg"
             alt="Modelo masculino"
             aria-label="Modelo masculino usanda roupas da marca"
           />
+        </a>
         </figure>
     </main>
 
